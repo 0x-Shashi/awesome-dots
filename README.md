@@ -31,12 +31,7 @@
 
 ## Website Showcase:
 
-<p align="center">
-  <img src="assets/showcase.png" alt="Awesome Dots Web Showcase" width="100%">
-</p>
-<p align="center">
-  <sub>Explore the upcoming interactive web catalog with real-time filtering, search, and detailed inspection cards.</sub>
-</p>
+
 
 ## Quick Links
 
@@ -599,7 +594,7 @@ Please keep issues and pull requests focused, respectful, and actionable. Partic
 
 If this project is useful to you, giving it a star helps more developers discover it.
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9c6afd57-7845-4fed-ae96-8cd3e349e543" />
+
 
 
 ## Contributors
