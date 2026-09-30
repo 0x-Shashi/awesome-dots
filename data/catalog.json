@@ -1,0 +1,102 @@
+[
+  {
+    "id": "dotlink",
+    "name": "dotlink",
+    "category": "coding-shipping",
+    "role": "Software Engineering",
+    "summary": "Connects local workspace to OpenAI Dot via secure MCP tunnel to inspect code, run tests, and manage Git repositories.",
+    "url": "https://github.com/abird-ai/dotlink",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  },
+  {
+    "id": "codex-docs",
+    "name": "codex-docs Mirror",
+    "category": "coding-shipping",
+    "role": "Documentation",
+    "summary": "Git-tracked documentation mirror tracking official changes across OpenAI Dots and Codex platform docs.",
+    "url": "https://github.com/chenrui333/codex-docs",
+    "access_level": "read-only",
+    "source_type": "community_project"
+  },
+  {
+    "id": "email-triage-guide",
+    "name": "Email Triage Strategy",
+    "category": "inbox-calendar",
+    "role": "Personal and Executive Admin",
+    "summary": "Safe operational pattern for reading and drafting incoming emails without granting autonomous outbound sending.",
+    "url": "https://www.dragapp.com/blog/openai-dots/",
+    "access_level": "read-only",
+    "source_type": "tutorial"
+  },
+  {
+    "id": "competitor-changelog-tracker",
+    "name": "Competitor Changelog Tracker",
+    "category": "research-briefings",
+    "role": "Market Intelligence",
+    "summary": "Continuous crawler monitoring competitor release notes, documentation, and pricing pages while separating facts from conjecture.",
+    "url": "https://frankchiu.io/ai-chatgpt-dots/",
+    "access_level": "read-only",
+    "source_type": "tutorial"
+  },
+  {
+    "id": "sales-proposal-sync",
+    "name": "Dynamic Sales Proposal Synchronizer",
+    "category": "customer-sales",
+    "role": "Sales and Account Management",
+    "summary": "Maintains alignment between client requirements and proposal slide decks, alerting account leads of discrepancies.",
+    "url": "https://learn.chatgpt.com/docs/dots#work-with-your-dot",
+    "access_level": "read-write",
+    "source_type": "official_case"
+  },
+  {
+    "id": "subscription-auditor",
+    "name": "Recurring Subscription Auditor",
+    "category": "finance-ops",
+    "role": "Finance and Operations",
+    "summary": "Audits recurring software subscriptions and cloud service bills to identify unused seats and renewal deadlines.",
+    "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+    "access_level": "read-only",
+    "source_type": "official_case"
+  },
+  {
+    "id": "content-repurposer",
+    "name": "Multi-Format Content Repurposer",
+    "category": "content-publishing",
+    "role": "Content and Marketing",
+    "summary": "Transforms raw interview transcripts into structured articles, social posts, and presentation decks.",
+    "url": "https://learn.chatgpt.com/docs/dots#work-with-your-dot",
+    "access_level": "read-write",
+    "source_type": "official_case"
+  },
+  {
+    "id": "morning-briefing",
+    "name": "Executive Morning Standup Briefing",
+    "category": "personal-admin",
+    "role": "Personal Productivity",
+    "summary": "Generates a consolidated briefing covering daily calendar commitments, urgent emails, and pending task approvals.",
+    "url": "https://dotsguide.com/get-started",
+    "access_level": "read-only",
+    "source_type": "tutorial"
+  },
+  {
+    "id": "agent-handoff-bridge",
+    "name": "agent-handoff-bridge",
+    "category": "teams-handoffs",
+    "role": "Multi-Agent Coordination",
+    "summary": "Self-hosted MCP queue enabling supervised handoffs between Codex, an OpenAI Dot, and external bot instances.",
+    "url": "https://github.com/1ststepai/agent-handoff-bridge",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  },
+  {
+    "id": "dot-os",
+    "name": "Dot OS",
+    "category": "teams-handoffs",
+    "role": "Multi-Agent Coordination",
+    "summary": "Demonstrates eight specialized Dot nodes operating in parallel with automated conflict resolution.",
+    "url": "https://github.com/evan-till/dot-os",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  }
+]

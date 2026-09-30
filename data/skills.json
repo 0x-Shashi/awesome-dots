@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "dots-skill-code-review-pro",
+    "name": "code-review-pro",
+    "title": "Code Review Pro",
+    "category": "engineering",
+    "description": "Professional code review craft: review strategy, feedback that lands, reviewer efficiency, and team review culture. Use when reviewing code or improving a team's review process.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/code-review-pro.md"
+  },
+  {
+    "id": "dots-skill-ci-cd-specialist",
+    "name": "ci-cd-specialist",
+    "title": "Ci Cd Specialist",
+    "category": "engineering",
+    "description": "Design and operate CI/CD pipelines: fast feedback, deployment strategies, environments, and pipeline reliability. Use when building, fixing, or scaling build and deploy pipelines.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/ci-cd-specialist.md"
+  },
+  {
+    "id": "dots-skill-debugging-pro",
+    "name": "debugging-pro",
+    "title": "Debugging Pro",
+    "category": "engineering",
+    "description": "Systematic debugging: reproduce, isolate, hypothesize, verify - with tooling for hard bugs. Use when stuck on a bug, flaky failure, or production incident.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/debugging-pro.md"
+  },
+  {
+    "id": "dots-skill-docker-pro",
+    "name": "docker-pro",
+    "title": "Docker Pro",
+    "category": "engineering",
+    "description": "Docker guidance - Dockerfile best practices, multi-stage builds, Compose, networking, volumes, and image security.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/docker-pro.md"
+  },
+  {
+    "id": "dots-skill-git-pro",
+    "name": "git-pro",
+    "title": "Git Pro",
+    "category": "engineering",
+    "description": "Advanced Git - rebasing, history surgery, bisecting, and recovery - use when Git gets complicated or things go wrong.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/git-pro.md"
+  },
+  {
+    "id": "dots-skill-github-actions-pro",
+    "name": "github-actions-pro",
+    "title": "Github Actions Pro",
+    "category": "engineering",
+    "description": "GitHub Actions guidance - workflow design, caching, matrices, OIDC, reusable workflows, and secure CI/CD.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/github-actions-pro.md"
+  },
+  {
+    "id": "dots-skill-kubernetes-pro",
+    "name": "kubernetes-pro",
+    "title": "Kubernetes Pro",
+    "category": "engineering",
+    "description": "Kubernetes guidance - workloads, services, config, RBAC, Helm/Kustomize, troubleshooting, and cluster operations.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/kubernetes-pro.md"
+  },
+  {
+    "id": "dots-skill-python-pro",
+    "name": "python-pro",
+    "title": "Python Pro",
+    "category": "engineering",
+    "description": "Idiomatic Python: project layout, packaging, type hints, testing, async, and performance. Use when writing, reviewing, or structuring Python projects.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/python-pro.md"
+  },
+  {
+    "id": "dots-skill-typescript-pro",
+    "name": "typescript-pro",
+    "title": "Typescript Pro",
+    "category": "engineering",
+    "description": "Idiomatic TypeScript: strict typing, generics, discriminated unions, project setup, and type-driven design. Use when writing or reviewing TypeScript, or configuring TS projects.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/typescript-pro.md"
+  },
+  {
+    "id": "dots-skill-refactoring-pro",
+    "name": "refactoring-pro",
+    "title": "Refactoring Pro",
+    "category": "engineering",
+    "description": "Systematic refactoring: safe transformations, strangler patterns, characterization tests, and large-scale change management. Use when improving code structure without changing behavior.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/refactoring-pro.md"
+  },
+  {
+    "id": "dots-skill-tdd-pro",
+    "name": "tdd-pro",
+    "title": "Tdd Pro",
+    "category": "engineering",
+    "description": "Test-driven development done right: red-green-refactor rhythm, test design, and knowing when TDD fits. Use when adopting TDD, writing tests first, or coaching teams.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/tdd-pro.md"
+  },
+  {
+    "id": "dots-skill-sre-pro",
+    "name": "sre-pro",
+    "title": "Sre Pro",
+    "category": "engineering",
+    "description": "Site reliability engineering - SLIs/SLOs, error budgets, and reliability practices - use when making systems reliable at scale.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/sre-pro.md"
+  },
+  {
+    "id": "dots-skill-security-auditor",
+    "name": "security-auditor",
+    "title": "Security Auditor",
+    "category": "engineering",
+    "description": "Plan and execute security audits against controls frameworks (ISO 27001, SOC 2, NIST CSF) with evidence-based findings.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/security-auditor.md"
+  },
+  {
+    "id": "dots-skill-clean-code",
+    "name": "clean-code",
+    "title": "Clean Code",
+    "category": "engineering",
+    "description": "Write readable, maintainable code: naming, small functions, clear control flow, and honest abstractions. Use when writing new code, refactoring, or reviewing for readability.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/clean-code.md"
+  },
+  {
+    "id": "dots-skill-clean-architecture",
+    "name": "clean-architecture",
+    "title": "Clean Architecture",
+    "category": "engineering",
+    "description": "Clean/hexagonal architecture: dependency rules, ports and adapters, layering, and testable boundaries. Use when structuring applications for maintainability and testability.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/clean-architecture.md"
+  },
+  {
+    "id": "dots-skill-rest-api-pro",
+    "name": "rest-api-pro",
+    "title": "Rest Api Pro",
+    "category": "engineering",
+    "description": "REST API design guidance - resource modeling, versioning, pagination, auth, error formats, and documentation.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/rest-api-pro.md"
+  },
+  {
+    "id": "dots-skill-graphql-pro",
+    "name": "graphql-pro",
+    "title": "Graphql Pro",
+    "category": "engineering",
+    "description": "GraphQL API guidance - schema design, resolvers, DataLoader, pagination, auth, and production operations.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/graphql-pro.md"
+  },
+  {
+    "id": "dots-skill-database-designer",
+    "name": "database-designer",
+    "title": "Database Designer",
+    "category": "engineering",
+    "description": "Relational schema design - normalization, keys, constraints, and evolution - use when modeling data or reviewing a schema.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/database-designer.md"
+  },
+  {
+    "id": "dots-skill-postgres-pro",
+    "name": "postgres-pro",
+    "title": "Postgres Pro",
+    "category": "engineering",
+    "description": "Deep PostgreSQL know-how - indexing, tuning, JSONB, and administration - use when working with or troubleshooting Postgres.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/postgres-pro.md"
+  },
+  {
+    "id": "dots-skill-redis-pro",
+    "name": "redis-pro",
+    "title": "Redis Pro",
+    "category": "engineering",
+    "description": "Redis data structures, caching strategies, and production operations - use when adding caching, queues, or rate limiting with Redis.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/redis-pro.md"
+  },
+  {
+    "id": "dots-skill-incident-responder",
+    "name": "incident-responder",
+    "title": "Incident Responder",
+    "category": "engineering",
+    "description": "Lead security incident response end to end - preparation, detection, containment, eradication, recovery, and lessons learned.",
+    "mcp_dependency": "dots-mcp-slack",
+    "doc_path": "docs/skills/engineering/incident-responder.md"
+  },
+  {
+    "id": "dots-skill-incident-commander",
+    "name": "incident-commander",
+    "title": "Incident Commander",
+    "category": "engineering",
+    "description": "Leading incident response - roles, communication, and decision-making under pressure - use when running or improving on-call response.",
+    "mcp_dependency": "dots-mcp-slack",
+    "doc_path": "docs/skills/engineering/incident-commander.md"
+  },
+  {
+    "id": "dots-skill-incident-comms",
+    "name": "incident-comms",
+    "title": "Incident Comms",
+    "category": "engineering",
+    "description": "Communicate during incidents - stakeholder updates, severity frameworks, war-room comms, and post-incident reviews.",
+    "mcp_dependency": "dots-mcp-slack",
+    "doc_path": "docs/skills/engineering/incident-comms.md"
+  },
+  {
+    "id": "dots-skill-sentry-pro-dev",
+    "name": "sentry-pro-dev",
+    "title": "Sentry Pro Dev",
+    "category": "engineering",
+    "description": "Sentry guidance - error tracking setup, release health, performance monitoring, alert rules, and quota management.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/sentry-pro-dev.md"
+  },
+  {
+    "id": "dots-skill-linux-pro",
+    "name": "linux-pro",
+    "title": "Linux Pro",
+    "category": "engineering",
+    "description": "Linux systems guidance - filesystem, permissions, processes, networking, logs, and production server administration.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/linux-pro.md"
+  },
+  {
+    "id": "dots-skill-bash-pro",
+    "name": "bash-pro",
+    "title": "Bash Pro",
+    "category": "engineering",
+    "description": "Bash scripting guidance - safe scripting patterns, quoting, error handling, pipes, and maintainable shell code.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/bash-pro.md"
+  },
+  {
+    "id": "dots-skill-devops-pro",
+    "name": "devops-pro",
+    "title": "Devops Pro",
+    "category": "engineering",
+    "description": "Standardized devops pro workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/devops-pro.md"
+  },
+  {
+    "id": "dots-skill-helm-pro",
+    "name": "helm-pro",
+    "title": "Helm Pro",
+    "category": "engineering",
+    "description": "Helm guidance - chart structure, templating, values management, releases, hooks, and chart best practices.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/helm-pro.md"
+  },
+  {
+    "id": "dots-skill-terraform-pro",
+    "name": "terraform-pro",
+    "title": "Terraform Pro",
+    "category": "engineering",
+    "description": "Terraform guidance - HCL structure, modules, state management, workspaces, planning discipline, and safe applies.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/terraform-pro.md"
+  },
+  {
+    "id": "dots-skill-argo-cd-pro",
+    "name": "argo-cd-pro",
+    "title": "Argo Cd Pro",
+    "category": "engineering",
+    "description": "Argo CD guidance - GitOps workflows, Application manifests, sync strategies, AppProjects, and multi-cluster ops.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/argo-cd-pro.md"
+  },
+  {
+    "id": "dots-skill-monorepo-pro",
+    "name": "monorepo-pro",
+    "title": "Monorepo Pro",
+    "category": "engineering",
+    "description": "Run effective monorepos: workspace layout, task orchestration, versioning, CI scaling, and code sharing. Use when setting up or managing monorepos.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/monorepo-pro.md"
+  },
+  {
+    "id": "dots-skill-microservices-pro",
+    "name": "microservices-pro",
+    "title": "Microservices Pro",
+    "category": "engineering",
+    "description": "Design and operate microservices: decomposition, inter-service communication, data ownership, and operational maturity. Use when decomposing systems or reviewing service architectures.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/microservices-pro.md"
+  },
+  {
+    "id": "dots-skill-nextjs-pro",
+    "name": "nextjs-pro",
+    "title": "Nextjs Pro",
+    "category": "engineering",
+    "description": "Idiomatic Next.js: App Router, Server Components, data fetching/caching, and production deployment. Use when writing, reviewing, or structuring Next.js applications.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/nextjs-pro.md"
+  },
+  {
+    "id": "dots-skill-fastapi-pro",
+    "name": "fastapi-pro",
+    "title": "Fastapi Pro",
+    "category": "engineering",
+    "description": "FastAPI guidance - typed endpoints, Pydantic validation, dependency injection, async patterns, and production deployment.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/fastapi-pro.md"
+  },
+  {
+    "id": "dots-skill-django-pro",
+    "name": "django-pro",
+    "title": "Django Pro",
+    "category": "engineering",
+    "description": "Django guidance - project structure, ORM mastery, admin, auth, async views, and production deployment.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/django-pro.md"
+  },
+  {
+    "id": "dots-skill-react-pro",
+    "name": "react-pro",
+    "title": "React Pro",
+    "category": "engineering",
+    "description": "Write professional React: hooks discipline, composition, performance, error boundaries, and modern patterns. Use for any React development beyond basics.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/react-pro.md"
+  },
+  {
+    "id": "dots-skill-testing-pro",
+    "name": "testing-pro",
+    "title": "Testing Pro",
+    "category": "engineering",
+    "description": "Professional testing craft: test design, doubles, boundaries, maintainable suites, and testing strategy. Use when writing tests, designing test suites, or improving testing practice.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/testing-pro.md"
+  },
+  {
+    "id": "dots-skill-e2e-testing-pro",
+    "name": "e2e-testing-pro",
+    "title": "E2E Testing Pro",
+    "category": "engineering",
+    "description": "End-to-end testing mastery: critical journeys, Playwright/Cypress patterns, flakiness control, and CI integration. Use when building or fixing browser E2E suites.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/e2e-testing-pro.md"
+  },
+  {
+    "id": "dots-skill-performance-pro",
+    "name": "performance-pro",
+    "title": "Performance Pro",
+    "category": "engineering",
+    "description": "Systematic performance engineering: measure, profile, optimize hotspots, and set budgets. Use when diagnosing slowness or making systems faster.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/engineering/performance-pro.md"
+  },
+  {
+    "id": "dots-skill-api-integration-specialist",
+    "name": "api-integration-specialist",
+    "title": "Api Integration Specialist",
+    "category": "engineering",
+    "description": "Integrate third-party APIs reliably: auth, pagination, retries, webhooks, rate limits, and contract testing. Use when connecting to external REST/GraphQL APIs or building resilient API clients.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/api-integration-specialist.md"
+  },
+  {
+    "id": "dots-skill-dependency-scanner",
+    "name": "dependency-scanner",
+    "title": "Dependency Scanner",
+    "category": "engineering",
+    "description": "Manage software composition analysis - SBOMs, vulnerability triage, and remediation of third-party dependencies.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/dependency-scanner.md"
+  },
+  {
+    "id": "dots-skill-dependabot-review",
+    "name": "dependabot-review",
+    "title": "Dependabot Review",
+    "category": "engineering",
+    "description": "Review Dependabot PRs efficiently: triage, risk assessment, batching, and auto-merge policies. Use when dependency update PRs pile up or you want a sane update workflow.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/dependabot-review.md"
+  },
+  {
+    "id": "dots-skill-vulnerability-management",
+    "name": "vulnerability-management",
+    "title": "Vulnerability Management",
+    "category": "engineering",
+    "description": "Run a full vulnerability management lifecycle - discovery, prioritization, remediation SLAs, and continuous measurement.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/vulnerability-management.md"
+  },
+  {
+    "id": "dots-skill-container-security",
+    "name": "container-security",
+    "title": "Container Security",
+    "category": "engineering",
+    "description": "Secure containerized workloads - image hardening, registry scanning, runtime protection, and supply-chain integrity.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/container-security.md"
+  },
+  {
+    "id": "dots-skill-cloud-security",
+    "name": "cloud-security",
+    "title": "Cloud Security",
+    "category": "engineering",
+    "description": "Secure cloud environments - IAM, posture management, logging, and multi-account architecture across providers.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/engineering/cloud-security.md"
+  },
+  {
+    "id": "dots-skill-literature-review",
+    "name": "literature-review",
+    "title": "Literature Review",
+    "category": "research",
+    "description": "Conduct systematic literature reviews - search strategy, screening, quality appraisal, synthesis, and gap identification. Use when mapping what a field knows on a question.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/literature-review.md"
+  },
+  {
+    "id": "dots-skill-market-researcher",
+    "name": "market-researcher",
+    "title": "Market Researcher",
+    "category": "research",
+    "description": "Conduct market research - sizing, segmentation, competitor analysis, surveys, and actionable market intelligence.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/market-researcher.md"
+  },
+  {
+    "id": "dots-skill-data-scientist",
+    "name": "data-scientist",
+    "title": "Data Scientist",
+    "category": "research",
+    "description": "Run the data science workflow end to end - framing, exploration, feature engineering, modeling, validation, and communicating results. Use when turning raw data into decisions or predictions.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/data-scientist.md"
+  },
+  {
+    "id": "dots-skill-competitive-intelligence",
+    "name": "competitive-intelligence",
+    "title": "Competitive Intelligence",
+    "category": "research",
+    "description": "Standardized competitive intelligence workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/competitive-intelligence.md"
+  },
+  {
+    "id": "dots-skill-deep-work-planner",
+    "name": "deep-work-planner",
+    "title": "Deep Work Planner",
+    "category": "research",
+    "description": "Plan and protect deep work: scheduling focus blocks, task selection, shutdown rituals, and measuring depth. Use when important work never gets sustained attention or days fill with shallow tasks.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/deep-work-planner.md"
+  },
+  {
+    "id": "dots-skill-bayesian-statistics",
+    "name": "bayesian-statistics",
+    "title": "Bayesian Statistics",
+    "category": "research",
+    "description": "Bayesian data analysis - priors, likelihoods, posterior computation, model comparison, and honest reporting.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/bayesian-statistics.md"
+  },
+  {
+    "id": "dots-skill-statistical-modeling",
+    "name": "statistical-modeling",
+    "title": "Statistical Modeling",
+    "category": "research",
+    "description": "Build statistical models properly - choosing models, checking assumptions, quantifying uncertainty, and avoiding common inferential traps. Use when moving beyond descriptives to inference or prediction with statistics.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/statistical-modeling.md"
+  },
+  {
+    "id": "dots-skill-time-series-analysis",
+    "name": "time-series-analysis",
+    "title": "Time Series Analysis",
+    "category": "research",
+    "description": "Analyze time-ordered data - decomposition, stationarity, forecasting models, changepoint detection, and proper temporal validation. Use when the order of observations matters.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/time-series-analysis.md"
+  },
+  {
+    "id": "dots-skill-causal-inference",
+    "name": "causal-inference",
+    "title": "Causal Inference",
+    "category": "research",
+    "description": "Estimate causal effects from observational and experimental data - DAGs, confounding control, quasi-experimental designs, and sensitivity analysis. Use when you need \"what causes what,\" not just correlation.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/causal-inference.md"
+  },
+  {
+    "id": "dots-skill-ai-research",
+    "name": "ai-research",
+    "title": "Ai Research",
+    "category": "research",
+    "description": "Standardized ai research workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/ai-research.md"
+  },
+  {
+    "id": "dots-skill-eval-frameworks",
+    "name": "eval-frameworks",
+    "title": "Eval Frameworks",
+    "category": "research",
+    "description": "Build evaluation frameworks for LLM systems - harness design, graders, datasets, regression tracking, and human-in-the-loop eval. Use when you need systematic measurement of model or agent quality.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/eval-frameworks.md"
+  },
+  {
+    "id": "dots-skill-llm-benchmarks",
+    "name": "llm-benchmarks",
+    "title": "Llm Benchmarks",
+    "category": "research",
+    "description": "Use LLM benchmarks wisely - what major benchmarks measure, their limits, contamination risks, and how to interpret scores. Use when evaluating models or reading benchmark claims critically.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/llm-benchmarks.md"
+  },
+  {
+    "id": "dots-skill-patent-search",
+    "name": "patent-search",
+    "title": "Patent Search",
+    "category": "research",
+    "description": "Standardized patent search workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/patent-search.md"
+  },
+  {
+    "id": "dots-skill-academic-writing",
+    "name": "academic-writing",
+    "title": "Academic Writing",
+    "category": "research",
+    "description": "Standardized academic writing workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/academic-writing.md"
+  },
+  {
+    "id": "dots-skill-grant-writing",
+    "name": "grant-writing",
+    "title": "Grant Writing",
+    "category": "research",
+    "description": "Standardized grant writing workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/grant-writing.md"
+  },
+  {
+    "id": "dots-skill-survey-designer",
+    "name": "survey-designer",
+    "title": "Survey Designer",
+    "category": "research",
+    "description": "Design effective surveys - question writing, response scales, sampling, bias reduction, and pilot testing. Use when collecting structured data from people and wanting answers you can trust.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/survey-designer.md"
+  },
+  {
+    "id": "dots-skill-qualitative-analysis",
+    "name": "qualitative-analysis",
+    "title": "Qualitative Analysis",
+    "category": "research",
+    "description": "Analyze qualitative data rigorously - coding, thematic analysis, grounded theory, and trustworthy interpretation. Use when working with interviews, open-ended responses, or observational data.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/qualitative-analysis.md"
+  },
+  {
+    "id": "dots-skill-citation-manager",
+    "name": "citation-manager",
+    "title": "Citation Manager",
+    "category": "research",
+    "description": "Manage citations and references - collecting sources, organizing libraries, formatting bibliographies, and keeping reference integrity. Use when writing anything that cites sources.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/citation-manager.md"
+  },
+  {
+    "id": "dots-skill-research-paper-assistant",
+    "name": "research-paper-assistant",
+    "title": "Research Paper Assistant",
+    "category": "research",
+    "description": "Work with academic papers - find them, read efficiently, extract claims and methods, compare across papers, and track what matters. Use when doing literature-driven research with AI assistance.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/research-paper-assistant.md"
+  },
+  {
+    "id": "dots-skill-methods-writing",
+    "name": "methods-writing",
+    "title": "Methods Writing",
+    "category": "research",
+    "description": "Writing reproducible Methods sections - detail calibration, reporting standards, and the reproducibility checklist.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/methods-writing.md"
+  },
+  {
+    "id": "dots-skill-peer-review-checklist",
+    "name": "peer-review-checklist",
+    "title": "Peer Review Checklist",
+    "category": "research",
+    "description": "Conducting rigorous peer review - structured evaluation, major vs minor issues, and writing reviews authors can act on.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/peer-review-checklist.md"
+  },
+  {
+    "id": "dots-skill-experiment-designer",
+    "name": "experiment-designer",
+    "title": "Experiment Designer",
+    "category": "research",
+    "description": "Design rigorous experiments - hypotheses, controls, randomization, power analysis, and preregistration. Use when planning any study where you need trustworthy causal conclusions.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/experiment-designer.md"
+  },
+  {
+    "id": "dots-skill-trend-analyzer",
+    "name": "trend-analyzer",
+    "title": "Trend Analyzer",
+    "category": "research",
+    "description": "Standardized trend analyzer workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/trend-analyzer.md"
+  },
+  {
+    "id": "dots-skill-data-labeling",
+    "name": "data-labeling",
+    "title": "Data Labeling",
+    "category": "research",
+    "description": "Design annotation pipelines that produce reliable training labels - guidelines, agreement measurement, and quality control.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/data-labeling.md"
+  },
+  {
+    "id": "dots-skill-rag-engineer",
+    "name": "rag-engineer",
+    "title": "Rag Engineer",
+    "category": "research",
+    "description": "Engineer retrieval-augmented generation systems - chunking, embeddings, hybrid retrieval, reranking, and grounded generation with citations. Use when building or fixing RAG pipelines.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/research/rag-engineer.md"
+  },
+  {
+    "id": "dots-skill-capacity-planner",
+    "name": "capacity-planner",
+    "title": "Capacity Planner",
+    "category": "operations",
+    "description": "Capacity planning - forecasting demand, sizing infrastructure, and avoiding both outages and waste - use when scaling systems.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/capacity-planner.md"
+  },
+  {
+    "id": "dots-skill-backup-strategist",
+    "name": "backup-strategist",
+    "title": "Backup Strategist",
+    "category": "operations",
+    "description": "Design backup strategies that survive real disasters: 3-2-1 rule, versioning, testing restores, and covering all devices. Use when setting up backups or auditing whether current backups actually work.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/backup-strategist.md"
+  },
+  {
+    "id": "dots-skill-backup-strategy",
+    "name": "backup-strategy",
+    "title": "Backup Strategy",
+    "category": "operations",
+    "description": "Designing backup strategies for PaaS-hosted apps - what to back up, how often, and proving restores work.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/backup-strategy.md"
+  },
+  {
+    "id": "dots-skill-status-page",
+    "name": "status-page",
+    "title": "Status Page",
+    "category": "operations",
+    "description": "Build and maintain status pages - incident communication, uptime transparency, and subscriber notifications.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/status-page.md"
+  },
+  {
+    "id": "dots-skill-runbook-writer",
+    "name": "runbook-writer",
+    "title": "Runbook Writer",
+    "category": "operations",
+    "description": "Writing runbooks that work at 3am - structure, diagnostics, and safe procedures - use when documenting operational response.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/runbook-writer.md"
+  },
+  {
+    "id": "dots-skill-on-call-guide",
+    "name": "on-call-guide",
+    "title": "On Call Guide",
+    "category": "operations",
+    "description": "Sustainable on-call - rotations, alert hygiene, handoffs, and burnout prevention - use when setting up or fixing on-call.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/on-call-guide.md"
+  },
+  {
+    "id": "dots-skill-on-call-handoff",
+    "name": "on-call-handoff",
+    "title": "On Call Handoff",
+    "category": "operations",
+    "description": "Run clean on-call handoffs - shift transitions, knowledge transfer, runbook currency, and sustainable rotations.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/on-call-handoff.md"
+  },
+  {
+    "id": "dots-skill-cron-monitoring",
+    "name": "cron-monitoring",
+    "title": "Cron Monitoring",
+    "category": "operations",
+    "description": "Monitoring scheduled jobs - heartbeat checks, missed runs, and duration anomalies - platform-agnostic patterns.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/cron-monitoring.md"
+  },
+  {
+    "id": "dots-skill-alert-rules",
+    "name": "alert-rules",
+    "title": "Alert Rules",
+    "category": "operations",
+    "description": "Designing alert rules that fire when it matters - thresholds, burn rates, and routing - for any monitoring stack.",
+    "mcp_dependency": "dots-mcp-sentry",
+    "doc_path": "docs/skills/operations/alert-rules.md"
+  },
+  {
+    "id": "dots-skill-escalation-policies",
+    "name": "escalation-policies",
+    "title": "Escalation Policies",
+    "category": "operations",
+    "description": "Design escalation policies - tiers, timeouts, stakeholder matrices, and escalation paths that actually work.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/escalation-policies.md"
+  },
+  {
+    "id": "dots-skill-license-auditor",
+    "name": "license-auditor",
+    "title": "License Auditor",
+    "category": "operations",
+    "description": "Audit open-source license compliance - inventory obligations, manage copyleft risk, and build approval workflows.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/license-auditor.md"
+  },
+  {
+    "id": "dots-skill-compliance-mapper",
+    "name": "compliance-mapper",
+    "title": "Compliance Mapper",
+    "category": "operations",
+    "description": "Map security controls across frameworks - one control set satisfying ISO 27001, SOC 2, NIST, PCI DSS, and more.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/compliance-mapper.md"
+  },
+  {
+    "id": "dots-skill-cloud-pricing",
+    "name": "cloud-pricing",
+    "title": "Cloud Pricing",
+    "category": "operations",
+    "description": "Understanding and optimizing cloud/PaaS pricing - cost models, common traps, and FinOps habits - vendor-neutral.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/operations/cloud-pricing.md"
+  },
+  {
+    "id": "dots-skill-budget-checkin",
+    "name": "budget-checkin",
+    "title": "Budget Checkin",
+    "category": "operations",
+    "description": "Run a monthly money check-in with an AI assistant: categorize spending, spot leaks, set one savings target, and view it through the 50/30/20 lens - judgment-free. Use once a month to stay aware of where your money goes. General educational information, not financial advice.",
+    "mcp_dependency": "dots-mcp-stripe",
+    "doc_path": "docs/skills/operations/budget-checkin.md"
+  },
+  {
+    "id": "dots-skill-financial-modeler",
+    "name": "financial-modeler",
+    "title": "Financial Modeler",
+    "category": "operations",
+    "description": "Build financial models - revenue forecasts, unit economics, scenario analysis, and investor-grade spreadsheets.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/financial-modeler.md"
+  },
+  {
+    "id": "dots-skill-saas-security-essentials",
+    "name": "saas-security-essentials",
+    "title": "Saas Security Essentials",
+    "category": "operations",
+    "description": "Cover SaaS security fundamentals - auth, data protection, access control, compliance basics, and incident readiness.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/saas-security-essentials.md"
+  },
+  {
+    "id": "dots-skill-secrets-manager",
+    "name": "secrets-manager",
+    "title": "Secrets Manager",
+    "category": "operations",
+    "description": "Design secrets management - vaulting, rotation, least-privilege access, and eliminating hardcoded credentials.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/secrets-manager.md"
+  },
+  {
+    "id": "dots-skill-iam-pro",
+    "name": "iam-pro",
+    "title": "Iam Pro",
+    "category": "operations",
+    "description": "Build identity and access management - lifecycle, privileged access, governance, and continuous access review.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/operations/iam-pro.md"
+  },
+  {
+    "id": "dots-skill-rbac-designer",
+    "name": "rbac-designer",
+    "title": "Rbac Designer",
+    "category": "operations",
+    "description": "Design role-based access control - role engineering, permission modeling, hierarchies, and governance.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/rbac-designer.md"
+  },
+  {
+    "id": "dots-skill-mfa-rollout",
+    "name": "mfa-rollout",
+    "title": "Mfa Rollout",
+    "category": "operations",
+    "description": "Plan and execute organization-wide MFA adoption - phishing-resistant methods, enrollment, exceptions, and measurement.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/mfa-rollout.md"
+  },
+  {
+    "id": "dots-skill-zero-trust-architect",
+    "name": "zero-trust-architect",
+    "title": "Zero Trust Architect",
+    "category": "operations",
+    "description": "Design zero-trust architecture - identity-centric access, micro-segmentation, continuous verification, and phased migration.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/zero-trust-architect.md"
+  },
+  {
+    "id": "dots-skill-soc-analyst",
+    "name": "soc-analyst",
+    "title": "Soc Analyst",
+    "category": "operations",
+    "description": "Run security operations center workflows - alert triage, investigation, escalation, and shift handover for detection and response.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/soc-analyst.md"
+  },
+  {
+    "id": "dots-skill-audit-logger",
+    "name": "audit-logger",
+    "title": "Audit Logger",
+    "category": "operations",
+    "description": "Standardized audit logger workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/operations/audit-logger.md"
+  },
+  {
+    "id": "dots-skill-procurement-gatekeeper",
+    "name": "procurement-gatekeeper",
+    "title": "Procurement Gatekeeper",
+    "category": "operations",
+    "description": "Standardized procurement gatekeeper workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/operations/procurement-gatekeeper.md"
+  },
+  {
+    "id": "dots-skill-invoice-reconciler",
+    "name": "invoice-reconciler",
+    "title": "Invoice Reconciler",
+    "category": "operations",
+    "description": "Standardized invoice reconciler workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-stripe",
+    "doc_path": "docs/skills/operations/invoice-reconciler.md"
+  },
+  {
+    "id": "dots-skill-sales-coach",
+    "name": "sales-coach",
+    "title": "Sales Coach",
+    "category": "sales",
+    "description": "Coach sales performance - discovery, objection handling, negotiation, pipeline management, and winning habits.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/sales-coach.md"
+  },
+  {
+    "id": "dots-skill-account-based-marketing",
+    "name": "account-based-marketing",
+    "title": "Account Based Marketing",
+    "category": "sales",
+    "description": "Run ABM programs - target account selection, personalized campaigns, sales orchestration, and account-level measurement.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/account-based-marketing.md"
+  },
+  {
+    "id": "dots-skill-channel-sales",
+    "name": "channel-sales",
+    "title": "Channel Sales",
+    "category": "sales",
+    "description": "Build indirect sales channels - partner recruitment, enablement, deal registration, and channel conflict management.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/channel-sales.md"
+  },
+  {
+    "id": "dots-skill-crm-specialist",
+    "name": "crm-specialist",
+    "title": "Crm Specialist",
+    "category": "sales",
+    "description": "Manage CRM systems - data architecture, pipeline design, automation, user adoption, and reporting.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/crm-specialist.md"
+  },
+  {
+    "id": "dots-skill-customer-success",
+    "name": "customer-success",
+    "title": "Customer Success",
+    "category": "sales",
+    "description": "Run customer success - onboarding, health scoring, retention plays, expansion, and churn prevention.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/customer-success.md"
+  },
+  {
+    "id": "dots-skill-customer-support-playbook",
+    "name": "customer-support-playbook",
+    "title": "Customer Support Playbook",
+    "category": "sales",
+    "description": "Build SaaS customer support - tiered support models, SLAs, macros, escalation, and support-driven product feedback.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/customer-support-playbook.md"
+  },
+  {
+    "id": "dots-skill-lead-scoring",
+    "name": "lead-scoring",
+    "title": "Lead Scoring",
+    "category": "sales",
+    "description": "Build lead scoring models - fit and behavior criteria, thresholds, decay, and sales-ready handoff processes.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/lead-scoring.md"
+  },
+  {
+    "id": "dots-skill-b2b-demand-gen",
+    "name": "b2b-demand-gen",
+    "title": "B2B Demand Gen",
+    "category": "sales",
+    "description": "Generate B2B pipeline - campaign strategy, multi-channel programs, SDR alignment, and pipeline measurement.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/b2b-demand-gen.md"
+  },
+  {
+    "id": "dots-skill-outbound-prospecting",
+    "name": "outbound-prospecting",
+    "title": "Outbound Prospecting",
+    "category": "sales",
+    "description": "Standardized outbound prospecting workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/sales/outbound-prospecting.md"
+  },
+  {
+    "id": "dots-skill-deal-desk",
+    "name": "deal-desk",
+    "title": "Deal Desk",
+    "category": "sales",
+    "description": "Standardized deal desk workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/deal-desk.md"
+  },
+  {
+    "id": "dots-skill-contract-reviewer",
+    "name": "contract-reviewer",
+    "title": "Contract Reviewer",
+    "category": "sales",
+    "description": "Systematic contract review assistance - clause extraction, risk flagging, and comparison - use when analyzing agreements.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/contract-reviewer.md"
+  },
+  {
+    "id": "dots-skill-pricing-strategist",
+    "name": "pricing-strategist",
+    "title": "Pricing Strategist",
+    "category": "sales",
+    "description": "Develop pricing strategy - research, models, packaging, testing, and communicating price changes.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/sales/pricing-strategist.md"
+  },
+  {
+    "id": "dots-skill-pitch-deck-creator",
+    "name": "pitch-deck-creator",
+    "title": "Pitch Deck Creator",
+    "category": "sales",
+    "description": "Build compelling pitch decks - narrative arc, slide-by-slide structure, and investor-focused storytelling.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/pitch-deck-creator.md"
+  },
+  {
+    "id": "dots-skill-partnership-manager",
+    "name": "partnership-manager",
+    "title": "Partnership Manager",
+    "category": "sales",
+    "description": "Build strategic partnerships - sourcing, structuring deals, co-marketing, and managing partner relationships.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/partnership-manager.md"
+  },
+  {
+    "id": "dots-skill-influencer-outreach",
+    "name": "influencer-outreach",
+    "title": "Influencer Outreach",
+    "category": "sales",
+    "description": "Plan influencer partnerships - finding creators, outreach, negotiation, campaign management, and ROI measurement.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/influencer-outreach.md"
+  },
+  {
+    "id": "dots-skill-conversion-optimizer",
+    "name": "conversion-optimizer",
+    "title": "Conversion Optimizer",
+    "category": "sales",
+    "description": "Increase conversion rates - CRO audits, A/B testing, landing page optimization, and experimentation programs.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/conversion-optimizer.md"
+  },
+  {
+    "id": "dots-skill-proposal-figures",
+    "name": "proposal-figures",
+    "title": "Proposal Figures",
+    "category": "sales",
+    "description": "Designing grant proposal figures - conceptual models, preliminary-data displays, and schematics that sell the science.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/sales/proposal-figures.md"
+  },
+  {
+    "id": "dots-skill-rfp-response-builder",
+    "name": "rfp-response-builder",
+    "title": "Rfp Response Builder",
+    "category": "sales",
+    "description": "Standardized rfp response builder workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/rfp-response-builder.md"
+  },
+  {
+    "id": "dots-skill-client-onboarding",
+    "name": "client-onboarding",
+    "title": "Client Onboarding",
+    "category": "sales",
+    "description": "Standardized client onboarding workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/client-onboarding.md"
+  },
+  {
+    "id": "dots-skill-retention-specialist",
+    "name": "retention-specialist",
+    "title": "Retention Specialist",
+    "category": "sales",
+    "description": "Standardized retention specialist workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/sales/retention-specialist.md"
+  },
+  {
+    "id": "dots-skill-content-strategist",
+    "name": "content-strategist",
+    "title": "Content Strategist",
+    "category": "content",
+    "description": "Design content strategies - audience research, pillar topics, editorial calendars, and measurement frameworks that tie content to revenue.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/content-strategist.md"
+  },
+  {
+    "id": "dots-skill-copywriter",
+    "name": "copywriter",
+    "title": "Copywriter",
+    "category": "content",
+    "description": "Write persuasive copy for ads, landing pages, emails, and more - headlines, hooks, and calls-to-action that convert.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/copywriter.md"
+  },
+  {
+    "id": "dots-skill-seo-specialist",
+    "name": "seo-specialist",
+    "title": "Seo Specialist",
+    "category": "content",
+    "description": "Execute technical and strategic SEO - audits, keyword strategy, link building, and sustainable organic growth.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/seo-specialist.md"
+  },
+  {
+    "id": "dots-skill-seo-content-writer",
+    "name": "seo-content-writer",
+    "title": "Seo Content Writer",
+    "category": "content",
+    "description": "Write search-optimized content that ranks - briefs, outlines, drafts, and on-page optimization for articles and landing pages.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/seo-content-writer.md"
+  },
+  {
+    "id": "dots-skill-technical-writer",
+    "name": "technical-writer",
+    "title": "Technical Writer",
+    "category": "content",
+    "description": "Standardized technical writer workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/technical-writer.md"
+  },
+  {
+    "id": "dots-skill-changelog-pro",
+    "name": "changelog-pro",
+    "title": "Changelog Pro",
+    "category": "content",
+    "description": "Maintain changelogs users actually read: Keep-a-Changelog format, automation, and release-note craft. Use when writing changelogs or automating release notes.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/content/changelog-pro.md"
+  },
+  {
+    "id": "dots-skill-changelog-comms",
+    "name": "changelog-comms",
+    "title": "Changelog Comms",
+    "category": "content",
+    "description": "Write and publish changelogs - release notes that users read, versioning, and launch communication cadence.",
+    "mcp_dependency": "dots-mcp-slack",
+    "doc_path": "docs/skills/content/changelog-comms.md"
+  },
+  {
+    "id": "dots-skill-newsletter-pro",
+    "name": "newsletter-pro",
+    "title": "Newsletter Pro",
+    "category": "content",
+    "description": "Run professional newsletters - content strategy, writing, growth, deliverability, and monetization.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/content/newsletter-pro.md"
+  },
+  {
+    "id": "dots-skill-email-marketer",
+    "name": "email-marketer",
+    "title": "Email Marketer",
+    "category": "content",
+    "description": "Run email marketing end-to-end - list building, campaigns, automation flows, deliverability, and performance optimization.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/email-marketer.md"
+  },
+  {
+    "id": "dots-skill-social-media-manager",
+    "name": "social-media-manager",
+    "title": "Social Media Manager",
+    "category": "content",
+    "description": "Plan, create, and manage social media presence - content calendars, platform strategy, engagement, and performance reporting.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/social-media-manager.md"
+  },
+  {
+    "id": "dots-skill-podcast-marketer",
+    "name": "podcast-marketer",
+    "title": "Podcast Marketer",
+    "category": "content",
+    "description": "Market through podcasts - launching shows, guest booking, promotion, and measuring podcast ROI.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/podcast-marketer.md"
+  },
+  {
+    "id": "dots-skill-video-editor",
+    "name": "video-editor",
+    "title": "Video Editor",
+    "category": "content",
+    "description": "Edit compelling videos with narrative structure, pacing, cuts, sound design, and color workflow.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/video-editor.md"
+  },
+  {
+    "id": "dots-skill-pr-specialist",
+    "name": "pr-specialist",
+    "title": "Pr Specialist",
+    "category": "content",
+    "description": "Run public relations - media outreach, press releases, thought leadership, and crisis communications.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/content/pr-specialist.md"
+  },
+  {
+    "id": "dots-skill-documentation-pro",
+    "name": "documentation-pro",
+    "title": "Documentation Pro",
+    "category": "content",
+    "description": "Write documentation developers actually use: READMEs, API docs, ADRs, runbooks, and docs-as-code workflows. Use when writing or improving technical documentation.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/content/documentation-pro.md"
+  },
+  {
+    "id": "dots-skill-speech-writer",
+    "name": "speech-writer",
+    "title": "Speech Writer",
+    "category": "content",
+    "description": "Standardized speech writer workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/speech-writer.md"
+  },
+  {
+    "id": "dots-skill-brand-guidelines",
+    "name": "brand-guidelines",
+    "title": "Brand Guidelines",
+    "category": "content",
+    "description": "Build and apply brand guidelines - voice, visual identity, and usage rules that keep every touchpoint consistent.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/brand-guidelines.md"
+  },
+  {
+    "id": "dots-skill-brand-identity",
+    "name": "brand-identity",
+    "title": "Brand Identity",
+    "category": "content",
+    "description": "Build complete brand identity systems with strategy, visual language, voice, and usage guidelines.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/brand-identity.md"
+  },
+  {
+    "id": "dots-skill-case-study-builder",
+    "name": "case-study-builder",
+    "title": "Case Study Builder",
+    "category": "content",
+    "description": "Standardized case study builder workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/case-study-builder.md"
+  },
+  {
+    "id": "dots-skill-press-release-drafter",
+    "name": "press-release-drafter",
+    "title": "Press Release Drafter",
+    "category": "content",
+    "description": "Standardized press release drafter workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/content/press-release-drafter.md"
+  },
+  {
+    "id": "dots-skill-ui-copywriter",
+    "name": "ui-copywriter",
+    "title": "Ui Copywriter",
+    "category": "content",
+    "description": "Standardized ui copywriter workflow configured for OpenAI Dots.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/content/ui-copywriter.md"
+  },
+  {
+    "id": "dots-skill-daily-briefing",
+    "name": "daily-briefing",
+    "title": "Daily Briefing",
+    "category": "productivity",
+    "description": "Build a morning briefing ritual with OpenAI Dot: overnight priorities, today's calendar, weather-aware planning, and top 3 focus items as a concise chat summary.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/daily-briefing.md"
+  },
+  {
+    "id": "dots-skill-calendar-guardian",
+    "name": "calendar-guardian",
+    "title": "Calendar Guardian",
+    "category": "productivity",
+    "description": "Protect your time with OpenAI Dot as calendar guardian: time-blocking, buffer time, declining gracefully, weekly calendar audits, and defending focus and personal time.",
+    "mcp_dependency": "dots-mcp-google-workspace",
+    "doc_path": "docs/skills/productivity/calendar-guardian.md"
+  },
+  {
+    "id": "dots-skill-calendar-pro",
+    "name": "calendar-pro",
+    "title": "Calendar Pro",
+    "category": "productivity",
+    "description": "Run your calendar like a pro: timeboxing, calendar layering, meeting hygiene, buffer design, and weekly planning rituals. Use when your schedule feels chaotic or your calendar controls you instead of the reverse.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/productivity/calendar-pro.md"
+  },
+  {
+    "id": "dots-skill-inbox-zero-coach",
+    "name": "inbox-zero-coach",
+    "title": "Inbox Zero Coach",
+    "category": "productivity",
+    "description": "Tame email overload with OpenAI Dot as your coach: the 4D triage method (delete/delegate/respond/defer/file), batching, reply templates, unsubscribing, and a daily 15-minute routine.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/inbox-zero-coach.md"
+  },
+  {
+    "id": "dots-skill-email-triage",
+    "name": "email-triage",
+    "title": "Email Triage",
+    "category": "productivity",
+    "description": "Reach and sustain inbox zero: triage workflows, filters, templates, batching, and unsubscribing systems. Use when email eats your day or your inbox has become an anxiety source.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/email-triage.md"
+  },
+  {
+    "id": "dots-skill-meeting-prep-brief",
+    "name": "meeting-prep-brief",
+    "title": "Meeting Prep Brief",
+    "category": "productivity",
+    "description": "Prepare for any meeting in minutes: build a 5-minute brief (purpose, people, your goal, questions, materials), research attendees, and capture decisions and action items afterward. Use when someone asks to prep for a meeting, has a big call coming up, or wants a debrief after one.",
+    "mcp_dependency": "dots-mcp-github",
+    "doc_path": "docs/skills/productivity/meeting-prep-brief.md"
+  },
+  {
+    "id": "dots-skill-meeting-notes-ai",
+    "name": "meeting-notes-ai",
+    "title": "Meeting Notes Ai",
+    "category": "productivity",
+    "description": "Use AI for meeting notes - automated summaries, action item extraction, and turning meetings into searchable knowledge.",
+    "mcp_dependency": "dots-mcp-google-workspace",
+    "doc_path": "docs/skills/productivity/meeting-notes-ai.md"
+  },
+  {
+    "id": "dots-skill-meeting-optimizer",
+    "name": "meeting-optimizer",
+    "title": "Meeting Optimizer",
+    "category": "productivity",
+    "description": "Make meetings fewer, shorter, and better: agenda design, facilitation, async alternatives, and meeting audits. Use when calendars are full of low-value meetings or you're redesigning team collaboration norms.",
+    "mcp_dependency": "dots-mcp-google-workspace",
+    "doc_path": "docs/skills/productivity/meeting-optimizer.md"
+  },
+  {
+    "id": "dots-skill-weekly-review",
+    "name": "weekly-review",
+    "title": "Weekly Review",
+    "category": "productivity",
+    "description": "Run a weekly review that keeps your whole system trusted: capture, clarify, calendar, and project check-ins. Use when tasks slip, the system goes stale, or weeks feel reactive.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/weekly-review.md"
+  },
+  {
+    "id": "dots-skill-weekly-review-ritual",
+    "name": "weekly-review-ritual",
+    "title": "Weekly Review Ritual",
+    "category": "productivity",
+    "description": "Run a GTD-style weekly review with the assistant: clear your inboxes, review last week and next week's calendar, check goals and project status, choose next week's priorities, and celebrate wins. Use when someone wants a weekly planning session, feels scattered, or says \"help me review my week.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/weekly-review-ritual.md"
+  },
+  {
+    "id": "dots-skill-habit-tracker",
+    "name": "habit-tracker",
+    "title": "Habit Tracker",
+    "category": "productivity",
+    "description": "Design habit systems that stick: habit selection, tracking methods, streaks, environment design, and recovery from slips. Use when building new routines or fixing ones that keep failing.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/habit-tracker.md"
+  },
+  {
+    "id": "dots-skill-habit-tracker-coach",
+    "name": "habit-tracker-coach",
+    "title": "Habit Tracker Coach",
+    "category": "productivity",
+    "description": "Build habits with your AI assistant as coach: start tiny, stack habits onto existing routines, do quick daily check-ins, repair streaks with the never-miss-twice rule, and review weekly. Use when starting exercise, reading, meditation, or any daily routine.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/habit-tracker-coach.md"
+  },
+  {
+    "id": "dots-skill-deep-work-planner",
+    "name": "deep-work-planner",
+    "title": "Deep Work Planner",
+    "category": "productivity",
+    "description": "Plan and protect deep work: scheduling focus blocks, task selection, shutdown rituals, and measuring depth. Use when important work never gets sustained attention or days fill with shallow tasks.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/deep-work-planner.md"
+  },
+  {
+    "id": "dots-skill-pomodoro-coach",
+    "name": "pomodoro-coach",
+    "title": "Pomodoro Coach",
+    "category": "productivity",
+    "description": "Coach the Pomodoro Technique properly: interval design, task sizing, interruption handling, and adapting cycles to real work. Use when building focused work habits or fighting distraction and procrastination.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/pomodoro-coach.md"
+  },
+  {
+    "id": "dots-skill-task-manager",
+    "name": "task-manager",
+    "title": "Task Manager",
+    "category": "productivity",
+    "description": "Design a personal task management system that actually works: capture, clarify, organize, review, and engage across any tool. Use when choosing or fixing how you manage tasks, or evaluating task apps.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/task-manager.md"
+  },
+  {
+    "id": "dots-skill-second-brain",
+    "name": "second-brain",
+    "title": "Second Brain",
+    "category": "productivity",
+    "description": "Build a second brain: a trusted external system for capturing, organizing, and retrieving everything you learn and need. Use when knowledge is scattered or you want ideas to compound over time.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/second-brain.md"
+  },
+  {
+    "id": "dots-skill-zettelkasten",
+    "name": "zettelkasten",
+    "title": "Zettelkasten",
+    "category": "productivity",
+    "description": "Practice the Zettelkasten method: atomic notes, unique IDs, linking, and building a thinking partner from your notes. Use when doing research, writing, or long-term knowledge work.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/zettelkasten.md"
+  },
+  {
+    "id": "dots-skill-travel-day-planner",
+    "name": "travel-day-planner",
+    "title": "Travel Day Planner",
+    "category": "productivity",
+    "description": "Plan day trips and travel days with an AI assistant: build itineraries around real open hours and transit, make packing checklists, set a daily budget, and prepare rain-day backup plans. Use for day trips, city days, or any single travel day.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/travel-day-planner.md"
+  },
+  {
+    "id": "dots-skill-time-tracker",
+    "name": "time-tracker",
+    "title": "Time Tracker",
+    "category": "productivity",
+    "description": "Track where your time actually goes: manual vs. automatic tracking, categorization, analysis, and turning data into better schedules. Use when diagnosing time leaks or building an honest picture of your workweek.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/time-tracker.md"
+  },
+  {
+    "id": "dots-skill-focus-modes",
+    "name": "focus-modes",
+    "title": "Focus Modes",
+    "category": "productivity",
+    "description": "Design focus modes that actually protect attention: Do Not Disturb schedules, app filtering, notification tiers, and context-specific setups. Use when interruptions fragment your day or 'do not disturb' never stays on.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/focus-modes.md"
+  },
+  {
+    "id": "dots-skill-home-task-manager",
+    "name": "home-task-manager",
+    "title": "Home Task Manager",
+    "category": "productivity",
+    "description": "Run your household like a calm system: capture every home task into a master list, pick a weekly room/zone focus, track maintenance schedules (filters, servicing, seasonal jobs), and split chores fairly with family or roommates. Use when the house feels chaotic, chores are unevenly split, or maintenance keeps getting forgotten.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/home-task-manager.md"
+  },
+  {
+    "id": "dots-skill-note-taker",
+    "name": "note-taker",
+    "title": "Note Taker",
+    "category": "productivity",
+    "description": "Take notes that you'll actually use: methods for meetings, lectures, reading, and research, plus processing workflows. Use when improving how you capture and retain information from any source.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/note-taker.md"
+  },
+  {
+    "id": "dots-skill-reminder-system",
+    "name": "reminder-system",
+    "title": "Reminder System",
+    "category": "productivity",
+    "description": "Build a reliable reminder setup with OpenAI Dot: capture-everything habit, due dates vs ticklers, recurring reminders, follow-up checks, and escalation when things slip.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/reminder-system.md"
+  },
+  {
+    "id": "dots-skill-goal-setter",
+    "name": "goal-setter",
+    "title": "Goal Setter",
+    "category": "productivity",
+    "description": "Set goals you'll actually pursue: SMART goals, OKRs, outcome vs. process goals, quarterly planning, and review cadences. Use when defining personal or team goals and building the system to track them.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/goal-setter.md"
+  },
+  {
+    "id": "dots-skill-executive-coach",
+    "name": "executive-coach",
+    "title": "Executive Coach",
+    "category": "productivity",
+    "description": "Coach senior leaders on strategic thinking, stakeholder management, presence, and organizational impact.",
+    "mcp_dependency": "dots-mcp-custom",
+    "doc_path": "docs/skills/productivity/executive-coach.md"
+  }
+]

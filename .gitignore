@@ -1,0 +1,11 @@
+# Upstream references and local scratch
+Repos/
+.sources/
+.upstream/
+.archive/
+scratch/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db

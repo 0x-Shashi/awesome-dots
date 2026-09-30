@@ -1,0 +1,6092 @@
+﻿[
+  {
+    "id": "dots-mcp-airtable",
+    "name": "airtable",
+    "title": "Airtable",
+    "category": "Productivity",
+    "tagline": "List Airtable bases, read table records, and add records.",
+    "host": "api.airtable.com",
+    "auth": "Airtable personal access token (per-user, airtable.com/create/tokens)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "bases",
+        "description": "list bases (name, id)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "records",
+        "description": "read records (flattened fields), 10 max",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "records",
+        "description": "Execute records command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "Execute create command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-alphavantage",
+    "name": "alphavantage",
+    "title": "Alphavantage",
+    "category": "Finance and Commerce",
+    "tagline": "Stock quotes and daily price history. Read-only.",
+    "host": "www.alphavantage.co",
+    "auth": "Alpha Vantage API key (per-user, alphavantage.co/support/#api-key; free tier 25 calls/day)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "quote",
+        "description": "latest quote",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "daily",
+        "description": "last 5 daily closes",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-amadeus",
+    "name": "amadeus",
+    "title": "Amadeus",
+    "category": "Business Services",
+    "tagline": "Search travel with Amadeus: flight offers and prices, airport autocomplete, hotel offers, cheapest dates.",
+    "host": "test.api.amadeus.com",
+    "auth": "OAuth 2.0 client credentials via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token (test env)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "locations",
+        "description": "airport/city autocomplete",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "flight-offers",
+        "description": "Execute flight-offers command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "hotel-offers",
+        "description": "Execute hotel-offers command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "flight-dates",
+        "description": "Execute flight-dates command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-anthropic",
+    "name": "anthropic",
+    "title": "Anthropic",
+    "category": "AI and Search",
+    "tagline": "Check your Anthropic API access and list available Claude models. Read-only.",
+    "host": "api.anthropic.com",
+    "auth": "Anthropic API key (per-user, console.anthropic.com)",
+    "action_count": 1,
+    "actions": [
+      {
+        "name": "models",
+        "description": "list models available to this key (id, display_name)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-apollo",
+    "name": "apollo",
+    "title": "Apollo",
+    "category": "Sales and CRM",
+    "tagline": "Search B2B contacts and enrich people and companies.",
+    "host": "api.apollo.io",
+    "auth": "API key (per-user; Professional plan or higher)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search people",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "enrich",
+        "description": "enrich one person (uses credits)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "org-enrich",
+        "description": "enrich one company",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-aqara",
+    "name": "aqara",
+    "title": "Aqara",
+    "category": "Hardware and IoT",
+    "tagline": "Read device attributes and send control commands to Aqara devices through the Aqara Open Cloud API: plugs and wall switches, lights (brightness, color temperature), air conditioners, supported locks, curtain motors, and saved scenes, organized by homes and rooms. Use it when the user asks about or wants to change anything in their Aqara setup. Zigbee devices need an Aqara hub online. Commands drive real physical hardware, so writes are confirmation-gated (see Operating Rules).",
+    "host": "open-<region>.aqara.com",
+    "auth": "OAuth-style account authorization via the secure credential flow",
+    "action_count": 12,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "UNTESTED: status check, list homes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "homes",
+        "description": "UNTESTED: list homes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "rooms",
+        "description": "UNTESTED: list rooms",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "devices",
+        "description": "UNTESTED: list devices",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "UNTESTED: read device attributes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "control",
+        "description": "Execute control command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "control",
+        "description": "Execute control command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "control",
+        "description": "Execute control command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "control",
+        "description": "Execute control command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "control",
+        "description": "Execute control command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scenes",
+        "description": "Execute scenes command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "run-scene",
+        "description": "Execute run-scene command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-asana",
+    "name": "asana",
+    "title": "Asana",
+    "category": "Productivity",
+    "tagline": "View your assigned Asana tasks and create new ones.",
+    "host": "app.asana.com",
+    "auth": "Asana personal access token (per-user, My Settings \\u2192 Apps \\u2192 Manage Developer Apps)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "me",
+        "description": "verify the connection, shows user gid",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tasks",
+        "description": "tasks assigned to me",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a task",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "create",
+        "description": "Execute create command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ashby",
+    "name": "ashby",
+    "title": "Ashby",
+    "category": "Sales and CRM",
+    "tagline": "Search Ashby public job boards (no key needed) and read/write the Ashby ATS: candidates, jobs, applications.",
+    "host": "api.ashbyhq.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "jobs-public",
+        "description": "public job board (no credential needed)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "auth",
+        "description": "verify the ATS API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "candidate-list",
+        "description": "list candidates",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-list",
+        "description": "list jobs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "application-list",
+        "description": "list applications/pipeline",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "application-create",
+        "description": "create an application (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "application-move",
+        "description": "move stages (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-attio",
+    "name": "attio",
+    "title": "Attio",
+    "category": "Sales and CRM",
+    "tagline": "Query CRM records, upsert by matching attribute, add notes and tasks.",
+    "host": "api.attio.com",
+    "auth": "API key (per-workspace)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "objects",
+        "description": "list available objects",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "query records",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upsert",
+        "description": "create or update a record",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "note",
+        "description": "add a note",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "task",
+        "description": "add a task",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-beatoven",
+    "name": "beatoven",
+    "title": "Beatoven",
+    "category": "AI and Search",
+    "tagline": "Beatoven.ai royalty-free music generation: compose tracks, poll tasks, download audio, fetch individual stems.",
+    "host": "public-api.beatoven.ai",
+    "auth": "API token via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify credential setup (no spend)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "compose",
+        "description": "Execute compose command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "compose",
+        "description": "Execute compose command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll until composed",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "download",
+        "description": "download the composed track",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "download",
+        "description": "download from a track URL directly",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stems",
+        "description": "list the four stem URLs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stems",
+        "description": "download one stem",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-beehiiv",
+    "name": "beehiiv",
+    "title": "Beehiiv",
+    "category": "Email and Marketing",
+    "tagline": "List publications, subscribers, and posts; add subscribers.",
+    "host": "api.beehiiv.com",
+    "auth": "API key (per-user; Scale plan or higher)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "publications",
+        "description": "list publications",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscriptions",
+        "description": "list subscribers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "posts",
+        "description": "list posts with stats",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "subscribe",
+        "description": "add a subscriber",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-black-forest-labs",
+    "name": "black-forest-labs",
+    "title": "Black Forest Labs",
+    "category": "AI and Search",
+    "tagline": "Black Forest Labs FLUX image generation: flux-2-pro and flux-2-flex text-to-image with async polling.",
+    "host": "api.bfl.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify credential setup (no spend)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "submit; prints a polling_url",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "Execute generate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "Execute generate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll until Ready",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "result",
+        "description": "fetch the result",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-bluesky",
+    "name": "bluesky",
+    "title": "Bluesky",
+    "category": "Communication",
+    "tagline": "Read timelines, search posts, post and follow.",
+    "host": "bsky.social",
+    "auth": "App password (per-account; session-based)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the session",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "profile",
+        "description": "view a profile (add --target to view someone else)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "timeline",
+        "description": "home timeline",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search posts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "post",
+        "description": "publish a post (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "follow",
+        "description": "follow an account (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "notifications",
+        "description": "list notifications",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-brave-search",
+    "name": "brave-search",
+    "title": "Brave Search",
+    "category": "AI and Search",
+    "tagline": "Independent web search from Brave's own index. Read-only.",
+    "host": "api.search.brave.com",
+    "auth": "Brave Search API key (per-user, brave.com/search/api; free tier 2,000 queries/month)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "web search",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-buttondown",
+    "name": "buttondown",
+    "title": "Buttondown",
+    "category": "Email and Marketing",
+    "tagline": "Read and write Buttondown: list subscribers and emails, add subscribers, draft emails.",
+    "host": "api.buttondown.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscribers",
+        "description": "list subscribers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscriber-add",
+        "description": "add a subscriber",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "emails",
+        "description": "list emails",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "email-create",
+        "description": "create a draft email",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "email-create",
+        "description": "send to the list (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-buzzsprout",
+    "name": "buzzsprout",
+    "title": "Buzzsprout",
+    "category": "Content and Media",
+    "tagline": "Manage podcast episodes on Buzzsprout: list and fetch episodes, create, update, or delete them, and list embed players. Use when the user wants to publish or manage podcast episodes on a Buzzsprout-hosted show.",
+    "host": "www.buzzsprout.com",
+    "auth": "API token via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episodes",
+        "description": "list episodes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episode-get",
+        "description": "get one episode",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episode-create",
+        "description": "Execute episode-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-update",
+        "description": "Execute episode-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-delete",
+        "description": "delete (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "players",
+        "description": "list embed players",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-calcom",
+    "name": "calcom",
+    "title": "Calcom",
+    "category": "Productivity",
+    "tagline": "List bookings and event types, create bookings.",
+    "host": "api.cal.com",
+    "auth": "personal API key (per-user, keys start `cal_` / `cal_live_`)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "bookings",
+        "description": "list bookings",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "bookings",
+        "description": "filter by status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "event-types",
+        "description": "list event types",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-booking",
+        "description": "Execute create-booking command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-calendly",
+    "name": "calendly",
+    "title": "Calendly",
+    "category": "Productivity",
+    "tagline": "Read and manage Calendly: list scheduled events, event types, invitees, and availability schedules; cancel bookings.",
+    "host": "api.calendly.com",
+    "auth": "OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token, shows your user URI",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scheduled-events",
+        "description": "Execute scheduled-events command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "event-types",
+        "description": "Execute event-types command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "invitees",
+        "description": "invitees for one event",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "availability",
+        "description": "Execute availability command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel",
+        "description": "Execute cancel command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-canva",
+    "name": "canva",
+    "title": "Canva",
+    "category": "Content and Media",
+    "tagline": "Read and manage Canva designs through the Canva Connect API: list designs and folders, inspect a design, create designs, upload assets, and export designs. Exports are async jobs: submit with export, then poll with export-status until the job succeeds.",
+    "host": "api.canva.com",
+    "auth": "provider OAuth 2.0 + PKCE via the secure credential flow",
+    "action_count": 11,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (prints the Canva user)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "designs",
+        "description": "list designs, optional search",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "design",
+        "description": "get one design's details",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "folders",
+        "description": "list folders",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "folder-items",
+        "description": "list items in a folder",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assets",
+        "description": "list uploaded assets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "Execute create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upload-asset",
+        "description": "upload a local file as an asset",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upload-asset",
+        "description": "import an asset from a URL",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "export",
+        "description": "submit an async export job (png, jpg, pdf, mp4, ...)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "export-status",
+        "description": "poll the export job; prints download URLs when done",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-cartesia",
+    "name": "cartesia",
+    "title": "Cartesia",
+    "category": "AI and Search",
+    "tagline": "Generate spoken audio from text with Cartesia's Sonic models (40+ languages) and browse the Cartesia voice library. Reach for this when the user wants narration, voiceovers, or spoken-audio files produced from a script.",
+    "host": "api.cartesia.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "voices",
+        "description": "Execute voices command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "voice-get",
+        "description": "Execute voice-get command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "Execute tts command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "Execute tts command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-clerk",
+    "name": "clerk",
+    "title": "Clerk",
+    "category": "Developer Tools",
+    "tagline": "List, create, update, and delete users.",
+    "host": "api.clerk.com",
+    "auth": "Secret API key (per-project)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the secret key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "users",
+        "description": "list users",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "user",
+        "description": "look up one user",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a user",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "update",
+        "description": "update a user",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "delete",
+        "description": "delete a user",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-clickup",
+    "name": "clickup",
+    "title": "Clickup",
+    "category": "Productivity",
+    "tagline": "List ClickUp workspaces and tasks, and create tasks.",
+    "host": "api.clickup.com",
+    "auth": "ClickUp personal API token (per-user, Settings \\u2192 Apps \\u2192 API Token)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "teams",
+        "description": "workspaces (id, name)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tasks",
+        "description": "tasks in a list (name, status, due date)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a task",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-cloudflare",
+    "name": "cloudflare",
+    "title": "Cloudflare",
+    "category": "Cloud Infrastructure",
+    "tagline": "List your Cloudflare zones and read DNS records. Read-only.",
+    "host": "api.cloudflare.com",
+    "auth": "API token (per-user, dash.cloudflare.com \\u2192 My Profile \\u2192 API Tokens; needs Zone:Read + DNS:Read)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "zones",
+        "description": "list zones (name, status)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "dns",
+        "description": "DNS records for a zone (type, name, content)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-cloudinary",
+    "name": "cloudinary",
+    "title": "Cloudinary",
+    "category": "Content and Media",
+    "tagline": "Manage media on Cloudinary through the Upload and Admin APIs: upload images and videos, list and inspect assets, update metadata and tags, delete assets, and check plan usage (credits, storage, bandwidth, transformations).",
+    "host": "api.cloudinary.com",
+    "auth": "cloud_name + API key + secret via the secure credential flow",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (also shows plan usage)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "usage",
+        "description": "plan usage: credits, storage, bandwidth, transformations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "upload an image",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upload",
+        "description": "upload a video",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upload",
+        "description": "upload into a folder",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "list",
+        "description": "list image assets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "get",
+        "description": "asset details",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "update",
+        "description": "Execute update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "delete",
+        "description": "delete an asset",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-coda",
+    "name": "coda",
+    "title": "Coda",
+    "category": "Productivity",
+    "tagline": "List docs, read tables and rows, add rows. Your docs as a database.",
+    "host": "coda.io",
+    "auth": "personal API token (per-user)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token (whoami)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "docs",
+        "description": "list docs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tables",
+        "description": "list tables in a doc",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "rows",
+        "description": "read rows from a table",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "add-row",
+        "description": "add a row",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-deepgram",
+    "name": "deepgram",
+    "title": "Deepgram",
+    "category": "AI and Search",
+    "tagline": "Transcribe prerecorded audio files to text (with optional diarization, summaries, topics, sentiment) and synthesize speech with Deepgram's Aura voices. Reach for this when the user has an audio file to transcribe or wants spoken audio generated from text.",
+    "host": "api.deepgram.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "Execute projects command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transcribe",
+        "description": "Execute transcribe command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transcribe",
+        "description": "Execute transcribe command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "Execute tts command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-deepl",
+    "name": "deepl",
+    "title": "Deepl",
+    "category": "AI and Search",
+    "tagline": "Translate text between 30+ languages, check usage.",
+    "host": "api-free.deepl.com",
+    "auth": "API key (per-user; free keys use api-free.deepl.com, paid keys use api.deepl.com)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the key and show usage",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "translate",
+        "description": "translate text",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "translate",
+        "description": "Execute translate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "languages",
+        "description": "list supported target languages",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-deepseek",
+    "name": "deepseek",
+    "title": "Deepseek",
+    "category": "AI and Search",
+    "tagline": "Chat with DeepSeek's models and check account balance: OpenAI-compatible chat completions with thinking mode, model listing, and balance lookup via the official API.",
+    "host": "api.deepseek.com",
+    "auth": "API key (per-user)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list available models",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "Execute chat command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "Execute chat command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "balance",
+        "description": "account balance",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-descript",
+    "name": "descript",
+    "title": "Descript",
+    "category": "Content and Media",
+    "tagline": "Work with Descript's API (open beta): list projects, inspect Underlord/agent jobs, submit a publish job, and poll a job until it finishes. Use when the user wants to drive Descript editing or publishing programmatically.",
+    "host": "api.descript.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list projects",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "project",
+        "description": "get one project",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "jobs",
+        "description": "list Underlord/agent jobs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-status",
+        "description": "get job status once",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-status",
+        "description": "poll until job_state is \"stopped\"",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "publish",
+        "description": "submit a publish job (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "job-delete",
+        "description": "delete a job (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-devto",
+    "name": "devto",
+    "title": "Devto",
+    "category": "Content and Media",
+    "tagline": "Read and write dev.to: own profile, own articles (published, drafts, all), public articles by username, create and update articles with a safe draft default.",
+    "host": "dev.to",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "me",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "my-articles",
+        "description": "published articles",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "my-articles",
+        "description": "published + drafts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "articles-by-user",
+        "description": "public reads, no key needed",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "article-create",
+        "description": "draft by default",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "article-create",
+        "description": "confirm first: goes live",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "article-update",
+        "description": "confirm first",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-digitalocean",
+    "name": "digitalocean",
+    "title": "Digitalocean",
+    "category": "Cloud Infrastructure",
+    "tagline": "List your DigitalOcean droplets and domains. Read-only.",
+    "host": "api.digitalocean.com",
+    "auth": "personal access token (per-user, cloud.digitalocean.com \\u2192 API)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "droplets",
+        "description": "droplets (name, status, region)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "domains",
+        "description": "domains (name)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-discord",
+    "name": "discord",
+    "title": "Discord",
+    "category": "Communication",
+    "tagline": "Read servers and channels, send messages and DMs.",
+    "host": "discord.com",
+    "auth": "Bot token (per-server install)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the bot token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "guilds",
+        "description": "list servers the bot joined",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channels",
+        "description": "list channels in a server",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "history",
+        "description": "read recent messages",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send",
+        "description": "post a message",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "dm",
+        "description": "open a DM and send",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-docusign",
+    "name": "docusign",
+    "title": "Docusign",
+    "category": "Business Services",
+    "tagline": "Draft and send signature envelopes (demo environment by default), check envelope status, and download signed documents.",
+    "host": "demo.docusign.net",
+    "auth": "OAuth 2.0 Authorization Code Grant (per-user)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify OAuth; list accounts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "envelopes",
+        "description": "list envelopes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "envelope-get",
+        "description": "envelope details",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "envelope-status",
+        "description": "status + recipient state",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "envelope-create",
+        "description": "Execute envelope-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "envelope-send",
+        "description": "Execute envelope-send command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "document-download",
+        "description": "Execute document-download command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-dub",
+    "name": "dub",
+    "title": "Dub",
+    "category": "Email and Marketing",
+    "tagline": "Create short links, read analytics, track conversions.",
+    "host": "api.dub.co",
+    "auth": "API key (per-workspace)",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "links",
+        "description": "list links",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "new short link",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "update",
+        "description": "edit a link",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "delete",
+        "description": "delete a link",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "analytics",
+        "description": "click analytics",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "track-lead",
+        "description": "record a lead",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "track-sale",
+        "description": "record a sale",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ecovacs",
+    "name": "ecovacs",
+    "title": "Ecovacs",
+    "category": "Hardware and IoT",
+    "tagline": "Control Ecovacs DEEBOT robot vacuums through the official Ecovacs Open Platform: list bound robots, read robot state and battery, start/pause/resume/stop cleaning, send the robot back to its dock, and set the sweep/mop work mode. Use when the user mentions their DEEBOT or robot vacuum.",
+    "host": "open.ecovacs.com",
+    "auth": "Access Key via the secure credential flow",
+    "action_count": 12,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the Access Key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "devices",
+        "description": "list bound robots",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "cleaning/paused/docked state",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "battery",
+        "description": "battery percent",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stats",
+        "description": "area cleaned, duration",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "clean",
+        "description": "Execute clean command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "pause",
+        "description": "Execute pause command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "resume",
+        "description": "Execute resume command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stop",
+        "description": "Execute stop command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "dock",
+        "description": "Execute dock command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "undock",
+        "description": "Execute undock command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "set-work-mode",
+        "description": "0=sweep+mop, 1=sweep only, 2=mop only, 3=sweep then mop",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-elai",
+    "name": "elai",
+    "title": "Elai",
+    "category": "AI and Search",
+    "tagline": "Build AI avatar presenter videos with Elai: list available avatars, inspect videos and their render status, submit renders, and poll until a render finishes. Reach for this when the user wants a talking-head video generated from a script or slide deck.",
+    "host": "apis.elai.io",
+    "auth": "API token via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "avatars",
+        "description": "Execute avatars command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "videos",
+        "description": "Execute videos command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video-get",
+        "description": "Execute video-get command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "render",
+        "description": "Execute render command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "render-status",
+        "description": "Execute render-status command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-elevenlabs",
+    "name": "elevenlabs",
+    "title": "Elevenlabs",
+    "category": "AI and Search",
+    "tagline": "Check ElevenLabs subscription usage, list voices, and generate text-to-speech audio (TTS needs --confirm, spends characters).",
+    "host": "api.elevenlabs.io",
+    "auth": "ElevenLabs API key (per-user, elevenlabs.io/app/settings/api-keys)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "me",
+        "description": "subscription tier, character_count, character_limit",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "voices",
+        "description": "available voices (name, category)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "text-to-speech",
+        "description": "Execute text-to-speech command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "text-to-speech",
+        "description": "Execute text-to-speech command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "text-to-speech",
+        "description": "Execute text-to-speech command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-etsy",
+    "name": "etsy",
+    "title": "Etsy",
+    "category": "Finance and Commerce",
+    "tagline": "Read Etsy shop data: receipts, listings, transactions, payment ledger; create listings.",
+    "host": "openapi.etsy.com",
+    "auth": "OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify OAuth token and keystring",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "receipts",
+        "description": "list receipts (orders)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "listings",
+        "description": "list active listings",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "listing-create",
+        "description": "create a listing (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "list transactions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "ledger",
+        "description": "list payment-account ledger entries",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-exa",
+    "name": "exa",
+    "title": "Exa",
+    "category": "AI and Search",
+    "tagline": "Neural web search with page text: one call returns ranked sources with snippets. Read-only.",
+    "host": "api.exa.ai",
+    "auth": "Exa API key (per-user, dashboard.exa.ai/api-keys)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search with page text",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-fal-ai",
+    "name": "fal-ai",
+    "title": "Fal Ai",
+    "category": "AI and Search",
+    "tagline": "Generate media with fal.ai: images, video, audio, music on one key. Submit jobs to 100s of models, poll status, fetch results, upload files.",
+    "host": "fal.run",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list the model catalog",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "run",
+        "description": "submit a job",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll the job",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "result",
+        "description": "fetch the finished result",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "upload a local file to fal's CDN",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-figma",
+    "name": "figma",
+    "title": "Figma",
+    "category": "Content and Media",
+    "tagline": "Look up your Figma user, read file metadata, and post comments on files.",
+    "host": "api.figma.com",
+    "auth": "Figma personal access token (per-user, Figma Settings \\u2192 Personal access tokens)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "me",
+        "description": "authenticated user (handle, email)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "file",
+        "description": "file metadata: name, lastModified, version, thumbnailUrl",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "comment",
+        "description": "Execute comment command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "comment",
+        "description": "Execute comment command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-firecrawl",
+    "name": "firecrawl",
+    "title": "Firecrawl",
+    "category": "AI and Search",
+    "tagline": "Scrape pages, crawl sites, search the web.",
+    "host": "api.firecrawl.dev",
+    "auth": "API key (per-user)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (costs one map call)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scrape",
+        "description": "scrape one page to markdown",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "crawl",
+        "description": "start a crawl; returns a job id",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "crawl-status",
+        "description": "poll a crawl job",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "map",
+        "description": "list URLs on a site",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "web search",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-flyio",
+    "name": "flyio",
+    "title": "Flyio",
+    "category": "Cloud Infrastructure",
+    "tagline": "List apps and machines, manage machine lifecycle.",
+    "host": "api.machines.dev",
+    "auth": "API token (app or org scoped)",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "apps",
+        "description": "list apps in an org",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "machines",
+        "description": "list machines in an app",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "volumes",
+        "description": "list volumes in an app",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "machine-create",
+        "description": "create a machine (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "machine-stop",
+        "description": "stop a machine (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "machine-start",
+        "description": "start a machine (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "machine-restart",
+        "description": "restart a machine (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "exec",
+        "description": "run a command in a machine (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-framer",
+    "name": "framer",
+    "title": "Framer",
+    "category": "Content and Media",
+    "tagline": "Verify a Framer project's Server API connection. Framer's Server API is WebSocket/SDK-only (there is no REST surface): the official framer-api npm package opens a long-lived connection to wss://api.framer.com/channel/headless-plugin with the header Authorization: Token <api_key>, keyed to one project. This connector's CLI performs that same official handshake as a connection check, so auth proves the API key and project pair work.",
+    "host": "api.framer.com",
+    "auth": "per-project API key via the secure credential flow",
+    "action_count": 1,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-front",
+    "name": "front",
+    "title": "Front",
+    "category": "Communication",
+    "tagline": "Read your Front shared inbox, and reply, assign teammates, and add tags on conversations (writes need --confirm).",
+    "host": "api2.frontapp.com",
+    "auth": "Front API token (per-user, Front Settings \\u2192 API)",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "inboxes",
+        "description": "list inboxes (name, address)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "conversations",
+        "description": "recent conversations (subject, status)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "teammates",
+        "description": "teammates (id, name, email)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "reply",
+        "description": "Execute reply command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "reply",
+        "description": "Execute reply command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assign",
+        "description": "Execute assign command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assign",
+        "description": "Execute assign command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tag",
+        "description": "Execute tag command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-gemini",
+    "name": "gemini",
+    "title": "Gemini",
+    "category": "AI and Search",
+    "tagline": "Google Gemini media generation: Nano Banana images, Imagen 4 images, Veo video, TTS, model listing.",
+    "host": "generativelanguage.googleapis.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list available models",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "image",
+        "description": "Nano Banana text-to-image (or edit with --image)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "image",
+        "description": "Execute image command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "imagen",
+        "description": "Imagen 4",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video",
+        "description": "Veo 3.1, prints an operation id",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "op-status",
+        "description": "poll the Veo operation",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "text-to-speech",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-github",
+    "name": "github",
+    "title": "Github",
+    "category": "Developer Tools",
+    "tagline": "View your profile, list repos, list open issues, and create issues.",
+    "host": "api.github.com",
+    "auth": "personal access token (classic, scopes `repo` + `read:user`, per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (GET /user)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "repos",
+        "description": "list your repos (name, private, updated_at)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "issues",
+        "description": "open issues in a repo",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-issue",
+        "description": "Execute create-issue command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-gitlab",
+    "name": "gitlab",
+    "title": "Gitlab",
+    "category": "Developer Tools",
+    "tagline": "Your GitLab user, projects, open merge requests, and issue creation.",
+    "host": "gitlab.com",
+    "auth": "personal access token (per-user, gitlab.com \\u2192 Preferences \\u2192 Access Tokens; `read_api` for reads, `api` to create issues)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "me",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "your projects",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "mrs",
+        "description": "open merge requests",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-issue",
+        "description": "create an issue",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-google-nest",
+    "name": "google-nest",
+    "title": "Google Nest",
+    "category": "Hardware and IoT",
+    "tagline": "Read traits and execute commands on Google Nest devices through the Smart Device Management (SDM) API: thermostats (mode, setpoints, ambient readings), cameras and doorbells (events, live-stream generation). Use it when the user asks about their Nest thermostat, wants to change heating/cooling, or wants camera/doorbell state. Thermostat commands start or stop real HVAC, so they are confirmation-gated (see Operating Rules).",
+    "host": "smartdevicemanagement.googleapis.com",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to google-nest.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from google-nest.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in google-nest.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-gumroad",
+    "name": "gumroad",
+    "title": "Gumroad",
+    "category": "Finance and Commerce",
+    "tagline": "View your Gumroad products and sales. Read-only by design.",
+    "host": "api.gumroad.com",
+    "auth": "Gumroad access token (per-user, app.gumroad.com \\u2192 Settings \\u2192 Advanced)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "products",
+        "description": "list products",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "sales",
+        "description": "recent sales",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-heygen",
+    "name": "heygen",
+    "title": "Heygen",
+    "category": "AI and Search",
+    "tagline": "HeyGen avatar and talking-head video: prompt-to-video agent, multi-scene avatar video, status polling, avatar and voice lists.",
+    "host": "api.heygen.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "avatars",
+        "description": "list stock avatars (custom avatar IDs come from the app)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "voices",
+        "description": "list voices",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video-agent",
+        "description": "one-shot prompt-to-video",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video-generate",
+        "description": "multi-scene",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video-status",
+        "description": "poll until completed",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-home-assistant",
+    "name": "home-assistant",
+    "title": "Home Assistant",
+    "category": "Hardware and IoT",
+    "tagline": "Read entity states and call services on your Home Assistant instance. Service calls are confirmed first.",
+    "host": "your instance host",
+    "auth": "Home Assistant long-lived access token (per-user, Profile \\u2192 Security \\u2192 Long-Lived Access Tokens)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to home-assistant.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from home-assistant.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in home-assistant.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-homey",
+    "name": "homey",
+    "title": "Homey",
+    "category": "Hardware and IoT",
+    "tagline": "Read device state and write capability values on a Homey Pro (local) or Homey cloud account through the Homey Web API: lights and outlets, dimmers and color, thermostats, connected locks, blinds and curtains, plus listing Flows (automations). Use it when the user asks about or wants to change anything paired to their Homey. Writes drive real physical hardware, so they are confirmation-gated (see Operating Rules).",
+    "host": "the host you pass via --host",
+    "auth": "personal API token or OAuth via the secure credential flow",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to homey.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from homey.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in homey.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-hubitat",
+    "name": "hubitat",
+    "title": "Hubitat",
+    "category": "Hardware and IoT",
+    "tagline": "Read device states and invoke capability commands on a Hubitat Elevation hub through the official Maker API app: lights and dimmers, deadbolt locks, garage door controllers, thermostats, location modes, and the Hubitat Safety Monitor (HSM). Use it when the user asks about or wants to change anything paired to their Hubitat hub. Commands drive real physical hardware, so writes are confirmation-gated (see Operating Rules).",
+    "host": "the host you pass via --host",
+    "auth": "Maker API token via the secure credential flow",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to hubitat.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from hubitat.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in hubitat.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-hubspot",
+    "name": "hubspot",
+    "title": "Hubspot",
+    "category": "Sales and CRM",
+    "tagline": "List and search contacts, create contacts, and list deals in your HubSpot CRM.",
+    "host": "api.hubapi.com",
+    "auth": "HubSpot private app token (per-user, HubSpot Settings \\u2192 Integrations \\u2192 Private Apps)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "contacts",
+        "description": "list contacts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search-contacts",
+        "description": "search contacts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-contact",
+        "description": "Execute create-contact command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "deals",
+        "description": "list deals",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-huggingface",
+    "name": "huggingface",
+    "title": "Huggingface",
+    "category": "AI and Search",
+    "tagline": "Verify your Hugging Face account and search the model hub. Read-only.",
+    "host": "huggingface.co",
+    "auth": "Hugging Face user access token (per-user, huggingface.co/settings/tokens)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "me",
+        "description": "whoami: name, email, account type",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "search the model hub (id, likes, downloads), 10 results",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-hume-ai",
+    "name": "hume-ai",
+    "title": "Hume Ai",
+    "category": "AI and Search",
+    "tagline": "Synthesize speech with Hume's Octave TTS models and read EVI (Empathic Voice Interface) conversational configs. Reach for this when the user wants expressive TTS audio from text or wants to inspect an EVI voice-agent configuration.",
+    "host": "api.hume.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "configs",
+        "description": "Execute configs command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "config-get",
+        "description": "Execute config-get command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "Execute tts command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ideogram",
+    "name": "ideogram",
+    "title": "Ideogram",
+    "category": "AI and Search",
+    "tagline": "Ideogram text-to-image generation with the strongest text rendering in the catalog: generate, edit, remix, upscale, describe, balance.",
+    "host": "api.ideogram.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (free balance read)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "balance",
+        "description": "read billing balance (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "Execute generate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "edit",
+        "description": "Magic Fill edit",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "remix",
+        "description": "style transfer",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upscale",
+        "description": "upscale",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "describe",
+        "description": "describe an image",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-kit",
+    "name": "kit",
+    "title": "Kit",
+    "category": "Email and Marketing",
+    "tagline": "Read and write Kit (ConvertKit): list subscribers, broadcasts, sequences, tags; draft broadcasts.",
+    "host": "api.kit.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscribers",
+        "description": "list subscribers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "broadcasts",
+        "description": "list broadcasts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "broadcast-create",
+        "description": "create a broadcast draft",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "broadcast-create",
+        "description": "send to the list (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "sequences",
+        "description": "list sequences",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tags",
+        "description": "list tags",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-kling",
+    "name": "kling",
+    "title": "Kling",
+    "category": "AI and Search",
+    "tagline": "Kling AI video generation with client-side JWT auth: text-to-video, image-to-video, status polling, clip extend, lip-sync.",
+    "host": "api.klingai.com",
+    "auth": "access key + secret key pair via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "mint a JWT and verify it is accepted (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "text2video",
+        "description": "Execute text2video command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "image2video",
+        "description": "Execute image2video command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll until succeed/failed",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "extend",
+        "description": "extend a finished clip",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "lip-sync",
+        "description": "lip-sync a video",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-langfuse",
+    "name": "langfuse",
+    "title": "Langfuse",
+    "category": "AI and Search",
+    "tagline": "Query traces and observations, manage prompts and scores.",
+    "host": "cloud.langfuse.com",
+    "auth": "Public+secret key pair (per-project; host declared at connect time)",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the credential",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "traces",
+        "description": "list traces",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "traces",
+        "description": "traces for one session",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "observations",
+        "description": "list observations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "prompts",
+        "description": "list prompts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "prompts",
+        "description": "one prompt's details",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "score",
+        "description": "score a trace (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "datasets",
+        "description": "list datasets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "dataset-item",
+        "description": "add a dataset item (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-leaf-agriculture",
+    "name": "leaf-agriculture",
+    "title": "Leaf Agriculture",
+    "category": "Data Services",
+    "tagline": "Read and manage farm data through Leaf Agriculture, a unified farm-data API that aggregates the partner-gated OEM platforms under self-serve access: John Deere, CNH Industrial (Case IH/New Holland), Climate FieldView, Trimble, Raven and AgLeader. The primitives it exposes (fields, boundaries, machine operation files for planting/harvest/application/tillage, plus as-applied irrigation) are exactly what a farmer-first fintech and supply-chain digitization product consumes. This is the practical route to partner-gated OEM data without a partnership agreement: individual provider connections need that grower's OAuth consent, which is the normal data-access model rather than a partnership gate.",
+    "host": "api.withleaf.io",
+    "auth": "API key via the secure credential flow",
+    "action_count": 10,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "fields",
+        "description": "list fields",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "field-get",
+        "description": "Execute field-get command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "field-create",
+        "description": "Execute field-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "field-update",
+        "description": "Execute field-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "field-delete",
+        "description": "Execute field-delete command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "field-sync",
+        "description": "trigger a manual field sync from providers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "field-push",
+        "description": "Execute field-push command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "operation-files",
+        "description": "Execute operation-files command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "irrigation",
+        "description": "as-applied irrigation events",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-lemon-squeezy",
+    "name": "lemon-squeezy",
+    "title": "Lemon Squeezy",
+    "category": "Finance and Commerce",
+    "tagline": "Read Lemon Squeezy revenue: list orders, subscriptions, customers, products; create checkout links.",
+    "host": "api.lemonsqueezy.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "orders",
+        "description": "list orders",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscriptions",
+        "description": "list subscriptions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customers",
+        "description": "list customers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "products",
+        "description": "list products",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "checkout-create",
+        "description": "create checkout (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-letta",
+    "name": "letta",
+    "title": "Letta",
+    "category": "Productivity",
+    "tagline": "Work with Letta agent memory: list agents, read core-memory blocks, list or add archival passages, create blocks, message an agent to record memory.",
+    "host": "api.letta.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "agents",
+        "description": "list agents",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "core-memory",
+        "description": "read core-memory blocks",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "archival-memory",
+        "description": "list archival passages",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "archival-memory",
+        "description": "add a passage",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "block-create",
+        "description": "create a standalone block",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "message",
+        "description": "let the agent record it",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-linear",
+    "name": "linear",
+    "title": "Linear",
+    "category": "Developer Tools",
+    "tagline": "View your assigned issues and create issues, over Linear's GraphQL API.",
+    "host": "api.linear.app",
+    "auth": "Linear personal API key (per-user, linear.app/settings/api)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (viewer query)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "issues",
+        "description": "your assigned issues (title, state, team)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "Execute create command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-lob",
+    "name": "lob",
+    "title": "Lob",
+    "category": "Business Services",
+    "tagline": "Send physical mail through Lob's Print and Mail API: verify US addresses; create postcards and letters that get printed and mailed; list what was sent; cancel a piece while it is still before production. Reach for this when the user wants a real letter or postcard in the mail rather than an email.",
+    "host": "api.lob.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "verify-address",
+        "description": "verify/correct a US address (no mail sent)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send-postcard",
+        "description": "Execute send-postcard command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "send-letter",
+        "description": "Execute send-letter command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "send-postcard",
+        "description": "Execute send-postcard command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "postcards",
+        "description": "list postcards",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "get-letter",
+        "description": "retrieve a letter",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel-postcard",
+        "description": "cancel before production (no effect after)",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "cancel-letter",
+        "description": "cancel before production (no effect after)",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-loops",
+    "name": "loops",
+    "title": "Loops",
+    "category": "Email and Marketing",
+    "tagline": "Manage email contacts, trigger loops, send transactional email.",
+    "host": "app.loops.so",
+    "auth": "API key (per-user)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "find",
+        "description": "look up a contact",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "add a contact",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upsert",
+        "description": "create or update",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "event",
+        "description": "fire an event",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send-email",
+        "description": "transactional email",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-luma",
+    "name": "luma",
+    "title": "Luma",
+    "category": "AI and Search",
+    "tagline": "Luma Dream Machine video generation: text-to-video and image-to-video, status polling, cancel, image upload.",
+    "host": "api.lumalabs.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key (free)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "submit a generation",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "image-to-video",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "generate",
+        "description": "Execute generate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll (no faster than every 5s)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel",
+        "description": "cancel a queued/running generation",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "upload",
+        "description": "upload an image for reference frames",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-mastodon",
+    "name": "mastodon",
+    "title": "Mastodon",
+    "category": "Communication",
+    "tagline": "Read and write Mastodon: verify the account, list own posts and followers, publish toots with native scheduling, upload media.",
+    "host": "your Mastodon instance host",
+    "auth": "provider OAuth via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "verify",
+        "description": "verify the token (own profile)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "my-posts",
+        "description": "recent toots",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "followers",
+        "description": "own followers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "post",
+        "description": "confirm first",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "post",
+        "description": "Execute post command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "media-upload",
+        "description": "returns a media id for post --media-ids",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-mem0",
+    "name": "mem0",
+    "title": "Mem0",
+    "category": "Productivity",
+    "tagline": "Mem0 memory CLI: add memories from messages, semantic search, read or delete memories, poll async events.",
+    "host": "api.mem0.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "add",
+        "description": "store a memory (async)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll an add/search event",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "semantic search (async)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "list",
+        "description": "list memories for a user",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "get",
+        "description": "get one memory",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "history",
+        "description": "change log of one memory",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "delete",
+        "description": "delete one memory (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "wipe",
+        "description": "delete ALL memories in scope (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-mercury",
+    "name": "mercury",
+    "title": "Mercury",
+    "category": "Finance and Commerce",
+    "tagline": "View Mercury bank accounts and transactions. Read-only by design.",
+    "host": "api.mercury.com",
+    "auth": "Mercury API token (per-user, app.mercury.com \\u2192 Settings \\u2192 API Tokens; a Read-Only token suffices)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "accounts",
+        "description": "list bank accounts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "recent transactions for account A",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-mistral",
+    "name": "mistral",
+    "title": "Mistral",
+    "category": "AI and Search",
+    "tagline": "Mistral AI's La Plateforme API: chat completions, embeddings, document OCR, and model listing via Bearer API key.",
+    "host": "api.mistral.ai",
+    "auth": "API key (per-user)",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list models for this key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "chat completion (bills credits)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "Execute chat command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "embeddings",
+        "description": "embeddings (bills credits)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "embeddings",
+        "description": "print complete vectors",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "ocr",
+        "description": "OCR a PDF (billed per page)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "ocr",
+        "description": "Execute ocr command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-monday",
+    "name": "monday",
+    "title": "Monday",
+    "category": "Productivity",
+    "tagline": "List boards, read items, create items. Project management over GraphQL.",
+    "host": "api.monday.com",
+    "auth": "personal API token (per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "boards",
+        "description": "list boards",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "items",
+        "description": "list items on a board",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-item",
+        "description": "create an item",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-moonraker",
+    "name": "moonraker",
+    "title": "Moonraker",
+    "category": "Hardware and IoT",
+    "tagline": "Control a Klipper-based 3D printer through the Moonraker API server (the backend behind Mainsail, Fluidd and RatOS): read server and print status, list and upload gcode files, start/pause/resume/cancel prints, trigger the emergency stop, toggle smart-plug devices, and (gated) run raw G-code. Use when the user mentions Moonraker, Klipper, Mainsail, or Fluidd.",
+    "host": "the host you pass via --host",
+    "auth": "no credential needed on most LAN installs (optional API key via the secure credential flow)",
+    "action_count": 11,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "server info; never needs a credential",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "print state and temperatures",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "files",
+        "description": "list gcode files",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "Execute upload command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "print-start",
+        "description": "Execute print-start command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "print-pause",
+        "description": "Execute print-pause command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "print-resume",
+        "description": "Execute print-resume command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "print-cancel",
+        "description": "Execute print-cancel command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "emergency-stop",
+        "description": "Execute emergency-stop command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "device-power",
+        "description": "Execute device-power command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "gcode-script",
+        "description": "Execute gcode-script command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-n8n",
+    "name": "n8n",
+    "title": "N8N",
+    "category": "Automation",
+    "tagline": "List and manage workflows, read executions.",
+    "host": "your n8n instance host",
+    "auth": "API key (instance; host declared at connect time)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "workflows",
+        "description": "list workflows",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "workflow",
+        "description": "inspect one workflow",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a workflow",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "update",
+        "description": "update a workflow (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "executions",
+        "description": "list executions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "executions",
+        "description": "executions for one workflow",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-neon",
+    "name": "neon",
+    "title": "Neon",
+    "category": "Developer Tools",
+    "tagline": "Inspect Neon serverless Postgres projects, branches, and databases. Branch create and delete need exact-match confirmation; connection passwords are masked.",
+    "host": "console.neon.tech",
+    "auth": "API key (per-user)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list projects",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "project-get",
+        "description": "one project",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "branches",
+        "description": "list branches",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "branch-create",
+        "description": "Execute branch-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "branch-delete",
+        "description": "Execute branch-delete command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "databases",
+        "description": "list databases",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-netlify",
+    "name": "netlify",
+    "title": "Netlify",
+    "category": "Cloud Infrastructure",
+    "tagline": "List your Netlify sites and recent deploys. Read-only.",
+    "host": "api.netlify.com",
+    "auth": "personal access token (per-user, app.netlify.com \\u2192 User settings \\u2192 Applications)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "sites",
+        "description": "sites (name, url, deploy state)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deploys",
+        "description": "recent deploys (state, created)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-newsapi",
+    "name": "newsapi",
+    "title": "Newsapi",
+    "category": "Data Services",
+    "tagline": "Top headlines and full-text news search. Read-only.",
+    "host": "newsapi.org",
+    "auth": "NewsAPI key (per-user, newsapi.org/register; free tier 100 requests/day)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "headlines",
+        "description": "top headlines",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search all news",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-notion",
+    "name": "notion",
+    "title": "Notion",
+    "category": "Productivity",
+    "tagline": "Search and query Notion, plus create pages, append blocks, and update page properties (writes need --confirm).",
+    "host": "api.notion.com",
+    "auth": "Notion internal integration token (per-user, created at notion.so/my-integrations)",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (search with page_size 1)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search pages and databases",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "page",
+        "description": "read a page's properties",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query-db",
+        "description": "query a database (first 20 rows)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "page-create",
+        "description": "Execute page-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "page-create",
+        "description": "Execute page-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "block-append",
+        "description": "Execute block-append command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "page-update",
+        "description": "Execute page-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-octoprint",
+    "name": "octoprint",
+    "title": "Octoprint",
+    "category": "Hardware and IoT",
+    "tagline": "Control an OctoPrint 3D printer over its local REST API: read printer state and temperatures, monitor print progress, start/pause/cancel/restart jobs, upload and select gcode files, set hotend and bed temperatures, jog or home axes, and (gated) run raw G-code. Use when the user mentions their OctoPrint instance or a printer it drives.",
+    "host": "the host you pass via --host",
+    "auth": "API key via the secure credential flow",
+    "action_count": 14,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "version",
+        "description": "server version",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "printer state, hotend and bed temps",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job",
+        "description": "current print progress",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "files",
+        "description": "list gcode files on the printer",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "printhead",
+        "description": "home axes (LOW)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-cmd",
+        "description": "Execute job-cmd command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-cmd",
+        "description": "Execute job-cmd command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "job-cmd",
+        "description": "Execute job-cmd command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "Execute upload command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "file-select",
+        "description": "Execute file-select command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tool-temp",
+        "description": "Execute tool-temp command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "bed-temp",
+        "description": "Execute bed-temp command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "gcode",
+        "description": "Execute gcode command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-openai",
+    "name": "openai",
+    "title": "Openai",
+    "category": "AI and Search",
+    "tagline": "Check your OpenAI API access and list the models your key can use. Read-only.",
+    "host": "api.openai.com",
+    "auth": "OpenAI API key (per-user, platform.openai.com/api-keys)",
+    "action_count": 1,
+    "actions": [
+      {
+        "name": "models",
+        "description": "list models available to this key (id, owned_by), truncated to 40",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-openrouter",
+    "name": "openrouter",
+    "title": "Openrouter",
+    "category": "AI and Search",
+    "tagline": "Browse the model catalog with per-token pricing; check your key usage. Read-only.",
+    "host": "openrouter.ai",
+    "auth": "API key (per-user, openrouter.ai/keys)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "models",
+        "description": "model catalog (id, name, prompt price)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "key",
+        "description": "your key's label, usage, limit",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-openweathermap",
+    "name": "openweathermap",
+    "title": "Openweathermap",
+    "category": "Data Services",
+    "tagline": "Current weather and 5-day forecast for any city. Read-only.",
+    "host": "api.openweathermap.org",
+    "auth": "OpenWeatherMap API key (per-user, openweathermap.org \\u2192 API keys; free tier fine)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "weather",
+        "description": "current conditions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "forecast",
+        "description": "5-day forecast, first 8 slots",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-opusclip",
+    "name": "opusclip",
+    "title": "Opusclip",
+    "category": "Content and Media",
+    "tagline": "Turn long-form videos into short, captioned, vertical clips with OpusClip's API: create a clip project from a video URL, check the project's render status, and list the resulting clips with their virality scores. API access requires a Pro-tier (or higher) OpusClip plan and is in beta.",
+    "host": "api.opus.pro",
+    "auth": "API key via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "check connection (verifies against a project if given)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "project-create",
+        "description": "Execute project-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "project-get",
+        "description": "project status (stage: QUEUED -> rendering -> done)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "clips",
+        "description": "list exportable clips with scores",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload-link",
+        "description": "generate a resumable upload link for a local file",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-oura",
+    "name": "oura",
+    "title": "Oura",
+    "category": "Hardware and IoT",
+    "tagline": "Read Oura Ring health data: sleep scores, sleep sessions, readiness, workouts, and SpO2.",
+    "host": "api.ouraring.com",
+    "auth": "OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "daily-readiness",
+        "description": "readiness scores",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "daily-sleep",
+        "description": "sleep scores with contributors",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "sleep",
+        "description": "detailed sleep sessions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "workouts",
+        "description": "workouts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "daily-spo2",
+        "description": "blood oxygen summaries",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-paddle",
+    "name": "paddle",
+    "title": "Paddle",
+    "category": "Finance and Commerce",
+    "tagline": "View Paddle transactions and customers. Read-only by design.",
+    "host": "api.paddle.com",
+    "auth": "Paddle API key (per-user, Paddle Dashboard \\u2192 Developer Tools \\u2192 Authentication)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (via event-types)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "recent transactions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customers",
+        "description": "customers",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-patreon",
+    "name": "patreon",
+    "title": "Patreon",
+    "category": "Finance and Commerce",
+    "tagline": "Read Patreon campaigns, members, tiers, and identity (read-only).",
+    "host": "www.patreon.com",
+    "auth": "Creator's Access Token via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the access token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "identity",
+        "description": "show the current user",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "campaign",
+        "description": "show a campaign",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "members",
+        "description": "list campaign members",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tiers",
+        "description": "list membership tiers",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-perplexity",
+    "name": "perplexity",
+    "title": "Perplexity",
+    "category": "AI and Search",
+    "tagline": "Ask questions with citations, search the web.",
+    "host": "api.perplexity.ai",
+    "auth": "API key (per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list available models",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "ask",
+        "description": "ask a question, get answer plus citations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "raw search results",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-pexels",
+    "name": "pexels",
+    "title": "Pexels",
+    "category": "Content and Media",
+    "tagline": "Search Pexels' royalty-free stock library: find photos and videos by keyword, browse curated/trending photos and popular videos, look up a single photo or video, and read collection contents. The Pexels API is read-only, so this connector cannot change anything.",
+    "host": "api.pexels.com",
+    "auth": "free API key via the secure credential flow",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search photos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "Execute search command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "curated",
+        "description": "trending photos, updated hourly",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "photo",
+        "description": "one photo's details and file URLs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search-videos",
+        "description": "search videos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "popular-videos",
+        "description": "popular videos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video",
+        "description": "one video's details and file URLs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "collection",
+        "description": "contents of a collection",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-philips-hue",
+    "name": "philips-hue",
+    "title": "Philips Hue",
+    "category": "Hardware and IoT",
+    "tagline": "Control Philips Hue lights locally: list lights and rooms, set brightness/color, activate scenes, read sensors.",
+    "host": "derived from --host at runtime; the CLI refuses to send the key anywhere else",
+    "auth": "Bridge pairing (local) or OAuth2 (remote)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to philips-hue.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from philips-hue.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in philips-hue.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-pipedrive",
+    "name": "pipedrive",
+    "title": "Pipedrive",
+    "category": "Sales and CRM",
+    "tagline": "List deals and contacts, create deals. CRM for your pipeline.",
+    "host": "{company}.pipedrive.com",
+    "auth": "personal API token (per-user) + company subdomain",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deals",
+        "description": "list deals",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deals",
+        "description": "filter by status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "persons",
+        "description": "list contacts",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-deal",
+        "description": "Execute create-deal command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-plain",
+    "name": "plain",
+    "title": "Plain",
+    "category": "Communication",
+    "tagline": "Find customers, manage support threads.",
+    "host": "core-api.uk.plain.com",
+    "auth": "Machine-user API key",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the Machine User API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customer-find",
+        "description": "find a customer by email",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "threads",
+        "description": "list threads (Relay cursor pagination, max 100 per page)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customer-upsert",
+        "description": "create or update a customer",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "thread-create",
+        "description": "open a support thread",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "thread-reply",
+        "description": "reply to a thread",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-playht",
+    "name": "playht",
+    "title": "Playht",
+    "category": "AI and Search",
+    "tagline": "Generate spoken audio from text with PlayHT voices, browse stock and cloned voices, and create instant voice clones. Reach for this when the user wants narration or voiceovers, a voice library lookup, or a voice cloned from a sample.",
+    "host": "api.play.ht",
+    "auth": "API key via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "Execute auth command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "voices",
+        "description": "Execute voices command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "tts",
+        "description": "Execute tts command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "clones",
+        "description": "Execute clones command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "clone",
+        "description": "Execute clone command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-podbean",
+    "name": "podbean",
+    "title": "Podbean",
+    "category": "Content and Media",
+    "tagline": "Manage podcast hosting on Podbean: list podcasts and their episodes, create, update, or delete episodes. Podbean's analytics endpoints are a differentiator; the download/analytics report paths are not yet mapped in this connector.",
+    "host": "api.podbean.com",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "podcasts",
+        "description": "list podcasts on the account",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episodes",
+        "description": "list episodes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episode-create",
+        "description": "Execute episode-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-update",
+        "description": "Execute episode-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-delete",
+        "description": "delete (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-polar",
+    "name": "polar",
+    "title": "Polar",
+    "category": "Finance and Commerce",
+    "tagline": "Read Polar orders, subscriptions, products, and customers; create checkouts and refunds.",
+    "host": "api.polar.sh",
+    "auth": "Organization Access Token via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the access token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "orders",
+        "description": "list orders",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "subscriptions",
+        "description": "list subscriptions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "products",
+        "description": "list products",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customers",
+        "description": "list customers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "checkout-create",
+        "description": "create a checkout (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "refund-create",
+        "description": "issue a refund (confirm first)",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-polymarket",
+    "name": "polymarket",
+    "title": "Polymarket",
+    "category": "Finance and Commerce",
+    "tagline": "Read-only prediction market data: events, markets, prices, order books. No trading, no API key needed.",
+    "host": "gamma-api.polymarket.com",
+    "auth": "none, public API",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "markets",
+        "description": "list markets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "markets",
+        "description": "search markets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "markets",
+        "description": "active, sorted by 24h volume",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "market-get",
+        "description": "one market by condition id",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "market-get",
+        "description": "one market by slug",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "prices",
+        "description": "price history",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "orderbook",
+        "description": "public order-book snapshot",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "events",
+        "description": "list events",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "events",
+        "description": "one event by slug",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-posthog",
+    "name": "posthog",
+    "title": "Posthog",
+    "category": "Developer Tools",
+    "tagline": "Your PostHog user, projects, and saved insights. Read-only.",
+    "host": "configurable",
+    "auth": "personal API key (per-user, PostHog Settings \\u2192 Personal API keys; starts `phx_`)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "me",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list projects",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "insights",
+        "description": "saved insights in a project",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-postmark",
+    "name": "postmark",
+    "title": "Postmark",
+    "category": "Email and Marketing",
+    "tagline": "Send transactional email, check delivery and bounces.",
+    "host": "api.postmarkapp.com",
+    "auth": "server API token (per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the server token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send",
+        "description": "Execute send command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "messages",
+        "description": "recent outbound messages",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "bounces",
+        "description": "recent bounces",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-printful",
+    "name": "printful",
+    "title": "Printful",
+    "category": "Business Services",
+    "tagline": "Read Printful products and orders, create orders and mockups.",
+    "host": "api.printful.com",
+    "auth": "personal access token via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "products",
+        "description": "list synced store products",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "orders",
+        "description": "list orders",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "order-create",
+        "description": "submit an order (confirm first; spends money)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "catalog-product",
+        "description": "show a catalog product and its variants",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "mockup-create",
+        "description": "start a mockup task",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-prusa-connect",
+    "name": "prusa-connect",
+    "title": "Prusa Connect",
+    "category": "Hardware and IoT",
+    "tagline": "Read Prusa 3D printer state through the official Prusa Connect cloud API: list printers and their state, list jobs and files, view cameras, read print statistics, and upload gcode files to printer storage. Use when the user mentions Prusa Connect or a networked Prusa printer (MK3/MK4/CORE One).",
+    "host": "connect.prusa3d.com",
+    "auth": "personal API token via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "printers",
+        "description": "printers and their state",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "jobs",
+        "description": "jobs and their status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "files",
+        "description": "files in printer storage",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "files",
+        "description": "Execute files command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cameras",
+        "description": "printer cameras",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stats",
+        "description": "print statistics",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "Execute upload command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-rachio",
+    "name": "rachio",
+    "title": "Rachio",
+    "category": "Hardware and IoT",
+    "tagline": "Control a Rachio smart irrigation controller through the public Rachio API. Check who is signed in, see what the controller is currently running, start watering a specific zone for a set number of seconds, and shut all water off in an emergency. Reach for this when the user asks about sprinklers, watering schedules, or irrigation zones.",
+    "host": "api.rach.io",
+    "auth": "personal API key via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "person",
+        "description": "person info + controller ids",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "schedule",
+        "description": "current schedule on a controller",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "zone-start",
+        "description": "Execute zone-start command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stop",
+        "description": "EMERGENCY OFF: closes all valves",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "device-on",
+        "description": "Execute device-on command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "device-off",
+        "description": "Execute device-off command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-railway",
+    "name": "railway",
+    "title": "Railway",
+    "category": "Cloud Infrastructure",
+    "tagline": "List projects and deployments, set variables, redeploy.",
+    "host": "backboard.railway.com",
+    "auth": "API token (account or workspace)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list projects (id, name)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "project",
+        "description": "inspect one project",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deployments",
+        "description": "list deployments for a project",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "set-var",
+        "description": "set an env var (confirm first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "redeploy",
+        "description": "redeploy a deployment (confirm first)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ramp",
+    "name": "ramp",
+    "title": "Ramp",
+    "category": "Finance and Commerce",
+    "tagline": "Read-only view of corporate spend: transactions, cards and limits, users, departments. No spend actions by design.",
+    "host": "api.ramp.com",
+    "auth": "OAuth 2.0 client credentials (per-user)",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the credential",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "list transactions",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "Execute transactions command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transaction-get",
+        "description": "one transaction",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cards",
+        "description": "list cards",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "card-limits",
+        "description": "spending restrictions on one card",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "users",
+        "description": "list users",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "departments",
+        "description": "list departments",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-readwise",
+    "name": "readwise",
+    "title": "Readwise",
+    "category": "Productivity",
+    "tagline": "Search your highlights and books, save new highlights.",
+    "host": "readwise.io",
+    "auth": "access token (per-user, from readwise.io/access_token)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "books",
+        "description": "list books in the library",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "highlights",
+        "description": "list highlights",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "highlights",
+        "description": "highlights for one book",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "add",
+        "description": "save a highlight",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-remove-bg",
+    "name": "remove-bg",
+    "title": "Remove Bg",
+    "category": "AI and Search",
+    "tagline": "Remove the background from an image with the remove.bg API: submit a local file or an image URL, get back a transparent PNG saved to a local path. Also check the account's remaining credits.",
+    "host": "api.remove.bg",
+    "auth": "API key via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (shows remaining credits)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "account",
+        "description": "credit balance and account info",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "process",
+        "description": "Execute process command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "process",
+        "description": "Execute process command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "process",
+        "description": "Execute process command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-render",
+    "name": "render",
+    "title": "Render",
+    "category": "Cloud Infrastructure",
+    "tagline": "List your Render services and recent deploys. Read-only.",
+    "host": "api.render.com",
+    "auth": "API key (per-user, dashboard.render.com \\u2192 Account Settings \\u2192 API Keys)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "services",
+        "description": "list services (name, type, region)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deploys",
+        "description": "recent deploys (status, created)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-replicate",
+    "name": "replicate",
+    "title": "Replicate",
+    "category": "AI and Search",
+    "tagline": "Run AI models, poll predictions.",
+    "host": "api.replicate.com",
+    "auth": "API key (per-user)",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "model",
+        "description": "get version ID and input schema",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "predict",
+        "description": "start a prediction",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "poll prediction status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel",
+        "description": "cancel a running prediction",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-resend",
+    "name": "resend",
+    "title": "Resend",
+    "category": "Email and Marketing",
+    "tagline": "Send email through Resend and check delivery status. Every send is confirmed with you first.",
+    "host": "api.resend.com",
+    "auth": "Resend API key (per-user, resend.com/api-keys)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "send",
+        "description": "Execute send command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "get",
+        "description": "check delivery status of a sent email",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-restream",
+    "name": "restream",
+    "title": "Restream",
+    "category": "Other Services",
+    "tagline": "Manage Restream multistreaming: read your profile, list streaming destinations (channels), toggle destinations or edit channel metadata, and retrieve your stream key. Use when the user wants to control where a livestream goes without opening the Restream dashboard.",
+    "host": "api.restream.io",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "profile",
+        "description": "show your Restream profile",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channels",
+        "description": "list streaming destinations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channel-update",
+        "description": "Execute channel-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "channel-meta-get",
+        "description": "get a channel's metadata",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channel-meta-update",
+        "description": "Execute channel-meta-update command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "stream-key",
+        "description": "show your stream key (output is a live secret)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-runway",
+    "name": "runway",
+    "title": "Runway",
+    "category": "AI and Search",
+    "tagline": "Runway developer API: text-to-video, image-to-video, task polling, video upscale, lip-sync.",
+    "host": "api.dev.runwayml.com",
+    "auth": "API secret via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify credential setup (no spend)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "text-to-video",
+        "description": "Execute text-to-video command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "image-to-video",
+        "description": "Execute image-to-video command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "task-status",
+        "description": "poll until SUCCEEDED/FAILED",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upscale",
+        "description": "upscale a video",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "lip-sync",
+        "description": "lip-sync a video",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-sendgrid",
+    "name": "sendgrid",
+    "title": "Sendgrid",
+    "category": "Email and Marketing",
+    "tagline": "Send email, check stats and profile.",
+    "host": "api.sendgrid.com",
+    "auth": "API key (per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send",
+        "description": "Execute send command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "stats",
+        "description": "email stats for the last 7 days",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stats",
+        "description": "stats from a date",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-sentry",
+    "name": "sentry",
+    "title": "Sentry",
+    "category": "Developer Tools",
+    "tagline": "List organizations and projects, triage unresolved issues from the last 24h, and resolve/archive/assign issues.",
+    "host": "sentry.io",
+    "auth": "auth token (per-user, sentry.io \\u2192 Settings \\u2192 Auth Tokens)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "orgs",
+        "description": "your organizations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "projects in an org",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "issues",
+        "description": "unresolved issues, last 24h, by frequency",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "resolve",
+        "description": "Execute resolve command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "archive",
+        "description": "Execute archive command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assign",
+        "description": "Execute assign command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-shippo",
+    "name": "shippo",
+    "title": "Shippo",
+    "category": "Business Services",
+    "tagline": "Ship through many carriers (USPS, UPS, FedEx, DHL and others) with one API: get rates for a shipment; buy a printable postage label; track a parcel; refund unused labels. Reach for this when the user needs to price or purchase shipping for a package.",
+    "host": "api.goshippo.com",
+    "auth": "API token via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "rates",
+        "description": "rates for a shipment (no label bought)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "get-shipment",
+        "description": "retrieve a shipment",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "track",
+        "description": "tracking status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "buy",
+        "description": "buy a label from a rate",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "buy",
+        "description": "Execute buy command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "refund",
+        "description": "refund/void an unused label",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-shopify",
+    "name": "shopify",
+    "title": "Shopify",
+    "category": "Finance and Commerce",
+    "tagline": "View orders, products, customers; create products and discounts with confirmation. No order or customer writes, ever.",
+    "host": "<your-shop>.myshopify.com",
+    "auth": "Shopify Admin API access token (per-user, Shopify admin \\u2192 Apps \\u2192 Develop apps \\u2192 custom app; scopes read_orders/read_products/read_customers plus write_products/write_discounts for writes)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "orders",
+        "description": "open orders",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "products",
+        "description": "products",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customers",
+        "description": "customers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "product-create",
+        "description": "Execute product-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "discount-create",
+        "description": "Execute discount-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-slack",
+    "name": "slack",
+    "title": "Slack",
+    "category": "Communication",
+    "tagline": "Read channels, post messages, list users. The most-requested workplace connector.",
+    "host": "slack.com",
+    "auth": "Slack OAuth (per-user)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (auth.test)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channels",
+        "description": "list channels (public + private)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "history",
+        "description": "recent messages in a channel",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "post",
+        "description": "post a message",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "users",
+        "description": "list workspace users",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search messages (needs search:read on the token)",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-smartcar",
+    "name": "smartcar",
+    "title": "Smartcar",
+    "category": "Hardware and IoT",
+    "tagline": "Read and control connected cars across many brands (Tesla, Ford, GM, Toyota, BMW, Hyundai and others) through one standardized API. Read odometer, location, charge and battery level, fuel level and tire pressure; lock/unlock doors; start/stop charging; set charge limits and schedules; route the built-in navigation. Use when the user mentions their car and the brand has no dedicated connector here, or asks for cross-brand vehicle telemetry and control.",
+    "host": "api.smartcar.com",
+    "auth": "provider OAuth 2.0 (Smartcar Connect) via the secure credential flow",
+    "action_count": 10,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "vehicles",
+        "description": "list connected vehicles",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "telemetry",
+        "description": "odometer, location, charge, battery, fuel, tires",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "security",
+        "description": "Execute security command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "security",
+        "description": "Execute security command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "charge",
+        "description": "Execute charge command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "charge",
+        "description": "Execute charge command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "charge-limit",
+        "description": "Execute charge-limit command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "navigate",
+        "description": "Execute navigate command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "charge-schedules",
+        "description": "Execute charge-schedules command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-smartthings",
+    "name": "smartthings",
+    "title": "Smartthings",
+    "category": "Hardware and IoT",
+    "tagline": "Read device status and issue capability commands across a Samsung SmartThings account: locations, devices, switches, dimmers, locks, thermostats, sirens, garage door controllers, and window shades. Use it when the user asks about or wants to change the state of anything paired to their SmartThings hub or cloud account. This connector drives real physical hardware, so every write is confirmation-gated (see Operating Rules).",
+    "host": "api.smartthings.com",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 11,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "status check: verify token, list locations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "locations",
+        "description": "list locations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "devices",
+        "description": "list devices with capabilities",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "read full device status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-spotify",
+    "name": "spotify",
+    "title": "Spotify",
+    "category": "Content and Media",
+    "tagline": "Read your profile, playlists, top tracks and artists, and search the catalog. Playlist and library writes need your confirmation.",
+    "host": "api.spotify.com",
+    "auth": "OAuth 2.0 Authorization Code (per-user)",
+    "action_count": 10,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "me",
+        "description": "current user's profile",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "playlists",
+        "description": "list the user's playlists",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "playlist-tracks",
+        "description": "tracks in a playlist",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "top-tracks",
+        "description": "user's top tracks",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "top-artists",
+        "description": "user's top artists",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search the catalog",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "playlist-create",
+        "description": "Execute playlist-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "playlist-add",
+        "description": "Execute playlist-add command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "save-track",
+        "description": "Execute save-track command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-square",
+    "name": "square",
+    "title": "Square",
+    "category": "Finance and Commerce",
+    "tagline": "Work with a Square seller account: list locations and payments, create orders, push a checkout to a physical Square Terminal for in-person payment, charge a payment source directly, cancel a pending Terminal checkout, and refund a payment. Reach for this when the user needs to take or return money through Square.",
+    "host": "connect.squareup.com",
+    "auth": "provider OAuth 2.0 or personal access token via the secure credential flow",
+    "action_count": 10,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token (sandbox)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "locations",
+        "description": "list seller locations",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "payments",
+        "description": "list payments",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "payment-get",
+        "description": "one payment",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "order-create",
+        "description": "create an order (moves no money)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "checkout-create",
+        "description": "Execute checkout-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "checkout-get",
+        "description": "Terminal checkout status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "checkout-cancel",
+        "description": "Execute checkout-cancel command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "charge",
+        "description": "Execute charge command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "refund",
+        "description": "Execute refund command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-stripe",
+    "name": "stripe",
+    "title": "Stripe",
+    "category": "Finance and Commerce",
+    "tagline": "Read-only Stripe visibility: balance, recent charges, customers. No write commands ship: expanding to writes is a deliberate v2.",
+    "host": "api.stripe.com",
+    "auth": "Stripe restricted API key (per-user, Dashboard \\u2192 Developers \\u2192 API keys; read-only permissions suffice)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "balance",
+        "description": "current available + pending balance",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "charges",
+        "description": "recent charges",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "customers",
+        "description": "recent customers",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-supabase",
+    "name": "supabase",
+    "title": "Supabase",
+    "category": "Developer Tools",
+    "tagline": "List tables, query rows, and insert/update/delete rows in your Supabase Postgres database.",
+    "host": "<ref>.supabase.co",
+    "auth": "service_role key (per-user, project Settings \\u2192 API)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to supabase.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from supabase.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in supabase.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-supermemory",
+    "name": "supermemory",
+    "title": "Supermemory",
+    "category": "Productivity",
+    "tagline": "Store and recall with Supermemory: add memories and documents, hybrid search, upload files, tune settings.",
+    "host": "api.supermemory.ai",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "add",
+        "description": "store a memory",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "hybrid search",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "list",
+        "description": "list stored documents",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "upload a file",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "settings",
+        "description": "tune extraction/chunking",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-switchbot",
+    "name": "switchbot",
+    "title": "Switchbot",
+    "category": "Hardware and IoT",
+    "tagline": "Read status and send commands to SwitchBot devices over the official OpenAPI v1.1: SwitchBot Bot (physical button presser), SwitchBot Lock, Curtain and Blind Tilt motors, plugs, lights, air conditioners, infrared remotes, and saved scenes. Use it when the user asks about or wants to change anything in their SwitchBot setup. Commands drive real physical hardware, so writes are confirmation-gated (see Operating Rules).",
+    "host": "api.switch-bot.com",
+    "auth": "token + secret pair via the secure credential flow",
+    "action_count": 11,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "status check: verify token, count devices",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "devices",
+        "description": "list devices and IR remotes",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "read device status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scenes",
+        "description": "Execute scenes command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scene-execute",
+        "description": "Execute scene-execute command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tally",
+    "name": "tally",
+    "title": "Tally",
+    "category": "Forms and Surveys",
+    "tagline": "List forms, read submissions, manage form blocks.",
+    "host": "api.tally.so",
+    "auth": "API key (per-user; free on all plans)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "forms",
+        "description": "list forms",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "form",
+        "description": "fetch a form with its blocks",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a form",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "update",
+        "description": "replace blocks",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "submissions",
+        "description": "read submissions",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tavily",
+    "name": "tavily",
+    "title": "Tavily",
+    "category": "AI and Search",
+    "tagline": "Fast, clean web research: one call returns an AI answer plus ranked sources with snippets. Read-only.",
+    "host": "api.tavily.com",
+    "auth": "Tavily API key (per-user, tavily.com)",
+    "action_count": 1,
+    "actions": [
+      {
+        "name": "search",
+        "description": "Execute search command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-telegram",
+    "name": "telegram",
+    "title": "Telegram",
+    "category": "Communication",
+    "tagline": "Send messages and read updates through your own Telegram bot. Bots can't message users who haven't started them first.",
+    "host": "api.telegram.org",
+    "auth": "Telegram bot token from @BotFather (per-user, single token)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "me",
+        "description": "bot identity (getMe)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "send",
+        "description": "send a message",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "updates",
+        "description": "recent incoming updates (limit 20)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tesla-fleet-api",
+    "name": "tesla-fleet-api",
+    "title": "Tesla Fleet Api",
+    "category": "Hardware and IoT",
+    "tagline": "Control Tesla vehicles through the official Tesla Fleet API: read live vehicle state, wake a sleeping car, and send signed commands (lock/unlock, keyless drive, charge control, preconditioning, honk/flash, trunk, sentry/valet, speed limit, navigation). Use when the user mentions their Tesla car or asks for vehicle actuation.",
+    "host": "fleet-api.prd.na.vn.cloud.tesla.com",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 13,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "vehicles",
+        "description": "list vehicles",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "vehicle-data",
+        "description": "live state (charge, location, climate, doors)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "vehicle-data",
+        "description": "Execute vehicle-data command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "wake",
+        "description": "wake a sleeping car (metered)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tesla-powerwall",
+    "name": "tesla-powerwall",
+    "title": "Tesla Powerwall",
+    "category": "Hardware and IoT",
+    "tagline": "Monitor and control Tesla energy sites (Powerwall, solar) through the official Tesla Fleet API. Read live power flows, battery state, and site settings; change backup reserve percentage, operation mode, and Storm Watch. Use when the user mentions their Powerwall, Tesla energy site, backup reserve, or storm mode.",
+    "host": "fleet-api.prd.na.vn.cloud.tesla.com",
+    "auth": "provider OAuth 2.0 via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "sites",
+        "description": "list energy sites",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "live power: solar, battery, grid, load",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "site-info",
+        "description": "site info and settings",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "history",
+        "description": "Execute history command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "set-reserve",
+        "description": "Execute set-reserve command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "set-mode",
+        "description": "Execute set-mode command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "storm-mode",
+        "description": "Execute storm-mode command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ticktick",
+    "name": "ticktick",
+    "title": "Ticktick",
+    "category": "Productivity",
+    "tagline": "Read and write TickTick: list projects and tasks, create tasks, complete and delete tasks.",
+    "host": "api.ticktick.com",
+    "auth": "OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list task lists",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "project-data",
+        "description": "tasks in one list",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "task-create",
+        "description": "Execute task-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "task-complete",
+        "description": "Execute task-complete command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "task-delete",
+        "description": "Execute task-delete command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tiktok",
+    "name": "tiktok",
+    "title": "Tiktok",
+    "category": "Content and Media",
+    "tagline": "Read your TikTok profile and video list. API access needs TikTok app approval first, and posting is not shipped.",
+    "host": "open.tiktokapis.com",
+    "auth": "OAuth 2.0 (per-user; TikTok app approval required)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "me",
+        "description": "authorized user's profile",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "videos",
+        "description": "list the user's videos with stats",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "videos",
+        "description": "next page",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-todoist",
+    "name": "todoist",
+    "title": "Todoist",
+    "category": "Productivity",
+    "tagline": "List tasks, create tasks, and mark them done in Todoist.",
+    "host": "api.todoist.com",
+    "auth": "Todoist API token (per-user, Settings \\u2192 Integrations \\u2192 Developer)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "tasks",
+        "description": "list tasks (content, due date, priority, project)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create",
+        "description": "create a task",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "complete",
+        "description": "mark a task done",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-transistor",
+    "name": "transistor",
+    "title": "Transistor",
+    "category": "Content and Media",
+    "tagline": "Manage podcast hosting on Transistor.fm: list shows and episodes, create draft episodes, update or delete them, and upload episode audio via Transistor's two-step upload flow. Use when the user wants to publish or manage podcast episodes programmatically.",
+    "host": "api.transistor.fm",
+    "auth": "API key via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "shows",
+        "description": "list your shows",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episodes",
+        "description": "list episodes of a show",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "episode-create",
+        "description": "Execute episode-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-update",
+        "description": "update title/description",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "episode-delete",
+        "description": "delete an episode",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "authorize-upload",
+        "description": "step 1 of audio upload (prints raw JSON)",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "upload",
+        "description": "Execute upload command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-triggerdev",
+    "name": "triggerdev",
+    "title": "Triggerdev",
+    "category": "Cloud Infrastructure",
+    "tagline": "Trigger background jobs, list runs, manage schedules.",
+    "host": "api.trigger.dev",
+    "auth": "API key (per-environment)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "runs",
+        "description": "list recent runs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "run",
+        "description": "show one run's status and output",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "trigger",
+        "description": "trigger a task run",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "trigger",
+        "description": "with a personal access token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel",
+        "description": "cancel a run",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "schedules",
+        "description": "list schedules",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-tuya",
+    "name": "tuya",
+    "title": "Tuya",
+    "category": "Hardware and IoT",
+    "tagline": "Read status and send control commands to Tuya Cloud / Smart Life devices: smart plugs and switches, lights, thermostats, curtain motors, and supported smart locks, plus executing saved scenes. Use it when the user asks about or wants to change anything paired through the Tuya or Smart Life app. Commands drive real physical hardware, so writes are confirmation-gated (see Operating Rules).",
+    "host": "openapi.tuyaus.com",
+    "auth": "Access ID + Access Secret pair via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "status check: fetch a cloud token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "device",
+        "description": "read device information",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "status",
+        "description": "read data-point status",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "command",
+        "description": "Execute command command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "scene",
+        "description": "Execute scene command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-twitch",
+    "name": "twitch",
+    "title": "Twitch",
+    "category": "Content and Media",
+    "tagline": "Read and write Twitch via the Helix API: channel profile, follower stats, live stream status, past videos, channel title and game updates, clip creation.",
+    "host": "api.twitch.tv",
+    "auth": "provider OAuth via the secure credential flow",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token (returns own profile)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "user",
+        "description": "channel profile (omit --login for own)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "followers",
+        "description": "follower count + recent followers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "stream",
+        "description": "live now? viewer count, title, game",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "videos",
+        "description": "past broadcasts and clips",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channel-update",
+        "description": "confirm first",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "clip-create",
+        "description": "confirm first",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-typeform",
+    "name": "typeform",
+    "title": "Typeform",
+    "category": "Forms and Surveys",
+    "tagline": "List forms and responses, create forms, and manage response webhooks with confirmation.",
+    "host": "api.typeform.com",
+    "auth": "personal access token (per-user)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the token (GET /me)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "forms",
+        "description": "list forms",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "form-get",
+        "description": "one form + its fields",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "responses",
+        "description": "list form responses",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "webhooks-list",
+        "description": "list the form's webhooks",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "webhook-create",
+        "description": "Execute webhook-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "webhook-delete",
+        "description": "Execute webhook-delete command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-uber-direct",
+    "name": "uber-direct",
+    "title": "Uber Direct",
+    "category": "Business Services",
+    "tagline": "Dispatch same-day couriers through Uber Direct for food, retail, grocery, or parcel deliveries. Get a price and time quote without dispatching anyone, create a delivery when the user approves, check its status, and cancel a pending one. Reach for this when the user needs something picked up and dropped off locally today.",
+    "host": "api.uber.com",
+    "auth": "provider OAuth 2.0 client-credentials via the secure credential flow",
+    "action_count": 5,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the credentials",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "quote",
+        "description": "Execute quote command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "dispatch",
+        "description": "Execute dispatch command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "get",
+        "description": "Execute get command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "cancel",
+        "description": "Execute cancel command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-unifi-protect",
+    "name": "unifi-protect",
+    "title": "Unifi Protect",
+    "category": "Hardware and IoT",
+    "tagline": "Read camera state and still snapshots from a local UniFi Protect console (Protect 5.3+) through the official Integration API, and adjust camera settings: PTZ position, flood lights, chimes, talkback. Use it when the user asks what their UniFi cameras see, wants a snapshot saved, or wants to change camera behavior. Everything runs against the local console; there is no cloud dependency.",
+    "host": "the host you pass via --host",
+    "auth": "integration key via the secure credential flow",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to unifi-protect.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from unifi-protect.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in unifi-protect.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-unsplash",
+    "name": "unsplash",
+    "title": "Unsplash",
+    "category": "Content and Media",
+    "tagline": "Search Unsplash's free stock photo library, browse the latest photos, look up a photo's details, browse a photographer's portfolio or a topic, and download an image while honoring Unsplash's API guidelines. At the Client-ID tier this connector is read-only.",
+    "host": "api.unsplash.com",
+    "auth": "access key via the secure credential flow",
+    "action_count": 8,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search photos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "Execute search command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "list",
+        "description": "latest photos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "photo",
+        "description": "one photo's details and URLs",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "user-photos",
+        "description": "a photographer's photos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "topic",
+        "description": "photos in a topic",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "download",
+        "description": "download an image file",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-upstash",
+    "name": "upstash",
+    "title": "Upstash",
+    "category": "Cloud Infrastructure",
+    "tagline": "Run Redis commands over REST.",
+    "host": "*.upstash.io",
+    "auth": "Per-database token (host declared at connect time)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "status",
+        "description": "Verify connection to upstash.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "query",
+        "description": "Retrieve data from upstash.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "execute",
+        "description": "Perform action in upstash.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-vapi",
+    "name": "vapi",
+    "title": "Vapi",
+    "category": "AI and Search",
+    "tagline": "Manage voice AI assistants, phone numbers, and calls. Outbound calls need exact-match confirmation; test numbers by default.",
+    "host": "api.vapi.ai",
+    "auth": "API key (per-user)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assistants",
+        "description": "list assistants",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "assistant-get",
+        "description": "one assistant",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "phone-numbers",
+        "description": "list phone numbers",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "call-create",
+        "description": "Execute call-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "call-get",
+        "description": "one call",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "call-list",
+        "description": "list calls",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-veed",
+    "name": "veed",
+    "title": "Veed",
+    "category": "Content and Media",
+    "tagline": "Remove backgrounds from video with VEED's direct developer API (POST /v1/video/background-remove): standard quality, fast throughput and green-screen chroma-key with spill suppression. Outputs are VP9-with-alpha or H.264 RGB+alpha, up to 4K.",
+    "host": "the host you pass via --api-host",
+    "auth": "API key via the secure credential flow",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "check readiness (no free status endpoint)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "background-remove",
+        "description": "Execute background-remove command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "background-remove",
+        "description": "Execute background-remove command.",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "background-remove",
+        "description": "Execute background-remove command.",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-vercel",
+    "name": "vercel",
+    "title": "Vercel",
+    "category": "Cloud Infrastructure",
+    "tagline": "See your Vercel account, projects, and recent deployments.",
+    "host": "api.vercel.com",
+    "auth": "personal token (per-user, vercel.com/account/tokens)",
+    "action_count": 3,
+    "actions": [
+      {
+        "name": "me",
+        "description": "verify the connection (your user)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "projects",
+        "description": "list projects (name, framework)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "deployments",
+        "description": "recent deployments (url, state)",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-webflow",
+    "name": "webflow",
+    "title": "Webflow",
+    "category": "Content and Media",
+    "tagline": "Work with the Webflow Data API v2: list sites, inspect site details, browse CMS collections and items, create/update/delete CMS items, and publish a site. Uses a per-site token from Site Settings.",
+    "host": "api.webflow.com",
+    "auth": "per-site token via the secure credential flow",
+    "action_count": 9,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the connection (lists accessible sites)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "sites",
+        "description": "list sites",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "site",
+        "description": "site details (domains, publish status)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "collections",
+        "description": "list CMS collections on a site",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "items",
+        "description": "list CMS items in a collection",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "create-item",
+        "description": "Execute create-item command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "update-item",
+        "description": "Execute update-item command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "delete-item",
+        "description": "delete a CMS item",
+        "dot_permission_mode": "User Handoff"
+      },
+      {
+        "name": "publish",
+        "description": "publish the site",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-wise",
+    "name": "wise",
+    "title": "Wise",
+    "category": "Finance and Commerce",
+    "tagline": "View Wise profiles and multi-currency balances. Read-only by design.",
+    "host": "api.wise.com",
+    "auth": "Wise personal API token (per-user, wise.com \\u2192 Settings \\u2192 API tokens)",
+    "action_count": 2,
+    "actions": [
+      {
+        "name": "profiles",
+        "description": "list profiles (also the status check)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "balances",
+        "description": "multi-currency balances for profile P",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-x",
+    "name": "x",
+    "title": "X",
+    "category": "Communication",
+    "tagline": "Post, search, like, DM. Note: no usable free read tier.",
+    "host": "api.x.com",
+    "auth": "OAuth2 PKCE (per-user; paid read access)",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "post",
+        "description": "post a tweet",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "search",
+        "description": "search recent tweets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "like",
+        "description": "like a tweet (resolves your user ID first)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "dm",
+        "description": "send a DM",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "delete",
+        "description": "delete a tweet",
+        "dot_permission_mode": "User Handoff"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-xai",
+    "name": "xai",
+    "title": "Xai",
+    "category": "AI and Search",
+    "tagline": "Query AI agent chat completions and list available foundation models through xAI's OpenAI-compatible API, with per-call token usage surfaced so cost is always visible.",
+    "host": "api.x.ai",
+    "auth": "API key (per-user)",
+    "action_count": 4,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "models",
+        "description": "list available foundation models",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "one completion (spends tokens)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "chat",
+        "description": "Execute chat command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-ynab",
+    "name": "ynab",
+    "title": "Ynab",
+    "category": "Finance and Commerce",
+    "tagline": "Read and write YNAB budgets: list budgets, accounts, balances, transactions, and categories; record transactions.",
+    "host": "api.ynab.com",
+    "auth": "OAuth 2.0 via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "budgets",
+        "description": "list budgets",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "accounts",
+        "description": "account balances (balances are in milliunits)",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transactions",
+        "description": "Execute transactions command.",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "categories",
+        "description": "category groups with budgeted/activity/balance",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "transaction-create",
+        "description": "Execute transaction-create command.",
+        "dot_permission_mode": "Supervised Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-youtube",
+    "name": "youtube",
+    "title": "Youtube",
+    "category": "Content and Media",
+    "tagline": "Read channels and videos, search, plus uploads and comments with confirmation.",
+    "host": "www.googleapis.com",
+    "auth": "OAuth 2.0 (per-user)",
+    "action_count": 7,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the OAuth token",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "channel",
+        "description": "show a channel",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "video",
+        "description": "show a video",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "search",
+        "description": "search videos",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "playlist-items",
+        "description": "list playlist items",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "upload",
+        "description": "Execute upload command.",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "comment",
+        "description": "Execute comment command.",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  },
+  {
+    "id": "dots-mcp-zep",
+    "name": "zep",
+    "title": "Zep",
+    "category": "Productivity",
+    "tagline": "Work with Zep's temporal memory: create users and threads, append messages, read distilled facts and history.",
+    "host": "api.getzep.com",
+    "auth": "API key via the secure credential flow",
+    "action_count": 6,
+    "actions": [
+      {
+        "name": "auth",
+        "description": "verify the API key",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "user-create",
+        "description": "create a user container",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "thread-create",
+        "description": "create a thread",
+        "dot_permission_mode": "Supervised Execution"
+      },
+      {
+        "name": "message-add",
+        "description": "append a message",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "context",
+        "description": "distilled facts for the thread",
+        "dot_permission_mode": "Autonomous Execution"
+      },
+      {
+        "name": "messages",
+        "description": "conversation history",
+        "dot_permission_mode": "Autonomous Execution"
+      }
+    ]
+  }
+]
