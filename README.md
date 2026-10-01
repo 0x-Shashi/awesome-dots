@@ -5,7 +5,7 @@
 <div align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
-  <a href="#curated-catalog"><img src="https://img.shields.io/badge/Curated_Resources-350%2B-brightgreen.svg" alt="350+ Curated Resources"></a>
+  <a href="#curated-catalog"><img src="https://img.shields.io/badge/Curated_Resources-400%2B-brightgreen.svg" alt="400+ Curated Resources"></a>
   <a href="#operational-tracks"><img src="https://img.shields.io/badge/Operational_Tracks-8-blueviolet.svg" alt="8 Operational Tracks"></a>
   <a href="https://www.trackawesomelist.com/0x-Shashi/awesome-openai-dots/"><img src="https://www.trackawesomelist.com/badge.svg" alt="Track Awesome List"></a>
   <a href="https://github.com/0x-Shashi/awesome-openai-dots/commits/main"><img src="https://img.shields.io/github/last-commit/0x-Shashi/awesome-openai-dots.svg" alt="GitHub Last Commit"></a>
@@ -22,26 +22,24 @@
 | Dimension | Count / Scope | Details |
 | :--- | :--- | :--- |
 | **Operational Tracks** | 8 Functional Categories | Engineering, Inbox, Research, Sales, Finance, Content, Admin, Teams |
+| **Official Plugins & Packages** | 60+ Store Listings & Source Repos | Developer tools, productivity, creativity, and business |
 | **MCP Connectors** | 150 Standardized Connectors | Developer Tools, Collaboration, Finance, CRM, Cloud, AI, and IoT |
 | **Dot Skills** | 160 Ready-to-Use Skills | Standing prompts across Engineering, Research, Ops, Sales, Writing |
-| **Curated Catalog** | 350+ Verified Resources | Official docs, field cases, connectors, tools, alternatives |
+| **Curated Catalog** | 400+ Verified Resources | Official docs, field cases, connectors, tools, alternatives |
 | **Governance Policies** | 2 Ready-to-Use Sets | Baseline 5-rule safety pack and operational domain rules |
 | **Bridges & Tunnels** | 12+ Bridge Protocols | MCP servers, desktop client tunnels, Slack, Teams, Discord |
 | **Integration Blueprints** | Standardized Schemas | Permission boundaries, OAuth authentication, revocation paths |
-
-## Website Showcase:
-
-
 
 ## Quick Links
 
 <p align="center">
   <b>
     <a href="docs/compatibility.md">Architecture Guide</a> &nbsp;|&nbsp;
+    <a href="docs/official-plugins.md">Official Plugins (60+)</a> &nbsp;|&nbsp;
     <a href="docs/skills/README.md">Skills Library (160)</a> &nbsp;|&nbsp;
     <a href="docs/connectors/README.md">MCP Connectors (150)</a> &nbsp;|&nbsp;
+    <a href="docs/use-cases/engineering-and-product.md">Use Cases</a> &nbsp;|&nbsp;
     <a href="docs/starter-policy.md">Safety Policy</a> &nbsp;|&nbsp;
-    <a href="docs/operational-rules.md">Operational Rules</a> &nbsp;|&nbsp;
     <a href="data/skills.json">Skills Dataset</a> &nbsp;|&nbsp;
     <a href="GUIDELINES.md">Guidelines</a>
   </b>
@@ -77,6 +75,8 @@
 - [Managing Dots in Workspaces (help.openai.com)](https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces) - Enterprise administration guide for policy enforcement, local computer tunnels, and cloud browser isolation.
 - [Getting Started With Your Dot (help.openai.com)](https://help.openai.com/en/articles/20001530-getting-started-with-your-dot) - Official onboarding checklist for configuring initial tasks, app connections, and scheduled routines.
 - [Dots Privacy, Security, and Safety FAQ (help.openai.com)](https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs) - Detailed breakdown of credential protection, automated safety scans, and prompt injection mitigations.
+- [Official ChatGPT Plugins and GitHub Source Packages (docs/official-plugins.md)](docs/official-plugins.md) - Complete catalog of 60+ installable ChatGPT store plugins and inspectable source code packages from openai/plugins.
+- [Production Use-Case Blueprints (docs/use-cases/engineering-and-product.md)](docs/use-cases/engineering-and-product.md) - End-to-end multi-app production workflows across engineering, release readiness, and knowledge discovery.
 
 ---
 
@@ -99,6 +99,10 @@
 - [Continuous Competitor Intelligence Watch (frankchiu.io)](https://frankchiu.io/ai-chatgpt-dots/) - Read-only research routine that monitors competitor releases and delivers morning briefings with source citations.
 - [InsurHOT Insurance Intelligence (github.com/alongor666)](https://github.com/alongor666/InsurHOT) - Specialized Dot deployment collecting public insurance disclosures and formatting findings into relational databases.
 - [Dot OS Multi-Agent Cluster (github.com/evan-till)](https://github.com/evan-till/dot-os) - Architecture utilizing eight specialized Dot nodes running in parallel with automated state reconciliation.
+- [Automated Error Triage to Patch Verification (docs/use-cases/engineering-and-product.md)](docs/use-cases/engineering-and-product.md) - Production workflow linking Sentry error traces, local repository inspection, test reproduction, and PR drafting.
+- [Release Readiness and Verification Audit (docs/use-cases/engineering-and-product.md)](docs/use-cases/engineering-and-product.md) - Go/no-go release verification combining GitHub CI status, Linear milestones, and Vercel preview builds.
+- [Product Launch Content Workspace (docs/use-cases/launch-and-operations.md)](docs/use-cases/launch-and-operations.md) - Multi-tool launch coordinator aligning Notion specs, Figma design tokens, and marketing copy drafts.
+- [Continuous Competitor Watch and Citation Digest (docs/use-cases/research-and-knowledge.md)](docs/use-cases/research-and-knowledge.md) - Read-only research routine combining Exa neural search, Consensus evidence, and Zotero citations.
 
 ---
 

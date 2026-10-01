@@ -98,5 +98,195 @@
     "url": "https://github.com/evan-till/dot-os",
     "access_level": "read-write",
     "source_type": "community_project"
+  },
+  {
+    "id": "chatgpt-plugin-github",
+    "name": "GitHub ChatGPT Plugin",
+    "category": "coding-shipping",
+    "role": "Software Engineering",
+    "summary": "Official ChatGPT store plugin to work with repositories, pull requests, issues, and code workflows.",
+    "url": "https://chatgpt.com/plugins/plugin_connector_1p_1a69035c238881919c4190932b2df699",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-supabase",
+    "name": "Supabase ChatGPT Plugin",
+    "category": "coding-shipping",
+    "role": "Database Management",
+    "summary": "Official ChatGPT store plugin to query and manage relational PostgreSQL database instances.",
+    "url": "https://chatgpt.com/plugins/plugin_asdk_app_69d3e5ee6a708191baa733f7b8931995",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-exa",
+    "name": "Exa Neural Search Plugin",
+    "category": "research-briefings",
+    "role": "Web Intelligence",
+    "summary": "Official neural web search plugin purpose-built for autonomous AI agents.",
+    "url": "https://chatgpt.com/plugins/plugin_asdk_app_69ea4ed2cf7c8191b742ef3622479ddd",
+    "access_level": "read-only",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-firecrawl",
+    "name": "Firecrawl Web Extraction Plugin",
+    "category": "research-briefings",
+    "role": "Data Extraction",
+    "summary": "Official web crawler plugin converting dynamic web pages into clean LLM-ready markdown.",
+    "url": "https://chatgpt.com/plugins/plugin_asdk_app_6a314a73f8ac819195b0d55e36b9c609",
+    "access_level": "read-only",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-vercel",
+    "name": "Vercel Deployment Plugin",
+    "category": "coding-shipping",
+    "role": "Cloud Deployment",
+    "summary": "Official plugin to inspect deployment previews, manage domains, and monitor cloud apps.",
+    "url": "https://chatgpt.com/plugins/vercel",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-gmail",
+    "name": "Gmail ChatGPT Plugin",
+    "category": "inbox-calendar",
+    "role": "Email Management",
+    "summary": "Official Google Workspace plugin to triage inbox correspondence, extract dates, and prepare draft replies.",
+    "url": "https://chatgpt.com/plugins/plugin_connector_1p_95d39881713c8191931482a62d6edff9",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-gdrive",
+    "name": "Google Drive ChatGPT Plugin",
+    "category": "content-publishing",
+    "role": "Document Management",
+    "summary": "Official Google Drive plugin working seamlessly across Docs, Sheets, Slides, and folder structures.",
+    "url": "https://chatgpt.com/plugins/plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-notion",
+    "name": "Notion ChatGPT Plugin",
+    "category": "content-publishing",
+    "role": "Knowledge Base",
+    "summary": "Official Notion plugin to search team docs, retrieve task boards, and insert documentation drafts.",
+    "url": "https://chatgpt.com/plugins/notion",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-slack",
+    "name": "Slack ChatGPT Plugin",
+    "category": "inbox-calendar",
+    "role": "Team Communication",
+    "summary": "Official Slack plugin to retrieve discussion threads, summarize channels, and draft team updates.",
+    "url": "https://chatgpt.com/plugins/slack",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-linear",
+    "name": "Linear ChatGPT Plugin",
+    "category": "coding-shipping",
+    "role": "Issue Tracking",
+    "summary": "Official Linear plugin to query active product cycles, create issues, and update project backlogs.",
+    "url": "https://chatgpt.com/plugins/linear",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-hubspot",
+    "name": "HubSpot ChatGPT Plugin",
+    "category": "customer-sales",
+    "role": "CRM & Sales",
+    "summary": "Official HubSpot plugin to query CRM records, analyze deal velocity, and prepare outreach.",
+    "url": "https://chatgpt.com/plugins/hubspot",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-shopify",
+    "name": "Shopify ChatGPT Plugin",
+    "category": "finance-ops",
+    "role": "E-Commerce Ops",
+    "summary": "Official Shopify plugin to query store catalogs, order fulfillment status, and customer records.",
+    "url": "https://chatgpt.com/plugins/shopify",
+    "access_level": "read-write",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-consensus",
+    "name": "Consensus Research Plugin",
+    "category": "research-briefings",
+    "role": "Scientific Research",
+    "summary": "Official scientific paper search plugin synthesizing peer-reviewed empirical evidence.",
+    "url": "https://chatgpt.com/plugins/consensus",
+    "access_level": "read-only",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "chatgpt-plugin-zotero",
+    "name": "Zotero Citation Plugin",
+    "category": "research-briefings",
+    "role": "Citation Management",
+    "summary": "Official Zotero plugin enabling Dots to retrieve research papers and format structured bibliographic citations.",
+    "url": "https://chatgpt.com/plugins/zotero",
+    "access_level": "read-only",
+    "source_type": "official_store_plugin"
+  },
+  {
+    "id": "usecase-error-triage-patch",
+    "name": "Automated Error Triage to Patch Verification",
+    "category": "coding-shipping",
+    "role": "Software Engineering",
+    "summary": "Cross-tool workflow connecting Sentry error traces, local repository inspection, test reproduction, and PR drafting.",
+    "url": "docs/use-cases/engineering-and-product.md#1-automated-error-triage-to-patch-verification",
+    "access_level": "read-write",
+    "source_type": "production_use_case"
+  },
+  {
+    "id": "usecase-release-readiness-audit",
+    "name": "Release Readiness and Verification Audit",
+    "category": "coding-shipping",
+    "role": "DevOps & Release",
+    "summary": "Audits open PRs, Linear milestone targets, and Vercel preview builds to generate a go/no-go release sheet.",
+    "url": "docs/use-cases/engineering-and-product.md#2-release-readiness-and-verification-audit",
+    "access_level": "read-only",
+    "source_type": "production_use_case"
+  },
+  {
+    "id": "usecase-launch-content-workspace",
+    "name": "Product Launch Content Workspace",
+    "category": "content-publishing",
+    "role": "Product Marketing",
+    "summary": "Coordinates Notion specs, Figma design tokens, and Canva assets to draft launch announcements and checklists.",
+    "url": "docs/use-cases/launch-and-operations.md#1-product-launch-content-workspace",
+    "access_level": "read-write",
+    "source_type": "production_use_case"
+  },
+  {
+    "id": "usecase-support-trend-gap-audit",
+    "name": "Customer Support Trend and Documentation Gap Audit",
+    "category": "customer-sales",
+    "role": "Customer Operations",
+    "summary": "Analyzes support inquiries across Slack and Gmail, detects recurring confusion points, and drafts documentation fixes in Notion.",
+    "url": "docs/use-cases/launch-and-operations.md#2-customer-support-trend-and-documentation-gap-audit",
+    "access_level": "read-only",
+    "source_type": "production_use_case"
+  },
+  {
+    "id": "usecase-competitor-watch",
+    "name": "Continuous Industry Beat and Competitor Watch",
+    "category": "research-briefings",
+    "role": "Market Intelligence",
+    "summary": "Autonomous web crawler tracking competitor changelogs and patent filings, separating facts from speculation.",
+    "url": "docs/use-cases/research-and-knowledge.md#1-continuous-industry-beat-and-competitor-watch",
+    "access_level": "read-only",
+    "source_type": "production_use_case"
   }
 ]
