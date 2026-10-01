@@ -25,7 +25,9 @@
 | **Official Plugins & Packages** | 60+ Store Listings & Source Repos | Developer tools, productivity, creativity, and business |
 | **MCP Connectors** | 150 Standardized Connectors | Developer Tools, Collaboration, Finance, CRM, Cloud, AI, and IoT |
 | **Dot Skills** | 160 Ready-to-Use Skills | Standing prompts across Engineering, Research, Ops, Sales, Writing |
-| **Curated Catalog** | 400+ Verified Resources | Official docs, field cases, connectors, tools, alternatives |
+| **Curated Catalog** | 420+ Verified Resources | Official docs, field cases, connectors, tools, alternatives |
+| **Community Projects** | 16+ Open-Source Projects | Marketing agents, hedge funds, screensavers, memory bridges |
+| **Banger Tweets & Takes** | 14 Curated Reactions | Founders, developers, and viral demonstrations |
 | **Governance Policies** | 2 Ready-to-Use Sets | Baseline 5-rule safety pack and operational domain rules |
 | **Bridges & Tunnels** | 12+ Bridge Protocols | MCP servers, desktop client tunnels, Slack, Teams, Discord |
 | **Integration Blueprints** | Standardized Schemas | Permission boundaries, OAuth authentication, revocation paths |
@@ -38,7 +40,9 @@
     <a href="docs/official-plugins.md">Official Plugins (60+)</a> &nbsp;|&nbsp;
     <a href="docs/skills/README.md">Skills Library (160)</a> &nbsp;|&nbsp;
     <a href="docs/connectors/README.md">MCP Connectors (150)</a> &nbsp;|&nbsp;
-    <a href="docs/use-cases/engineering-and-product.md">Use Cases</a> &nbsp;|&nbsp;
+    <a href="#community-built-projects">Community Projects</a> &nbsp;|&nbsp;
+    <a href="#banger-tweets-and-viral-takes">Banger Tweets</a> &nbsp;|&nbsp;
+    <a href="#articles">Articles</a> &nbsp;|&nbsp;
     <a href="docs/starter-policy.md">Safety Policy</a> &nbsp;|&nbsp;
     <a href="data/skills.json">Skills Dataset</a> &nbsp;|&nbsp;
     <a href="GUIDELINES.md">Guidelines</a>
@@ -55,6 +59,8 @@
 - [Production Multi-App Use Cases](#production-multi-app-use-cases)
 - [Getting Started and Safety Setup](#getting-started-and-safety-setup)
 - [Field Cases and Roster Automations](#field-cases-and-roster-automations)
+- [Community-Built Projects](#community-built-projects)
+- [Banger Tweets and Viral Takes](#banger-tweets-and-viral-takes)
 - [Team Packs and Enterprise Policies](#team-packs-and-enterprise-policies)
 - [Production Skills Library](#production-skills-library)
 - [Skills and Developer Tools](#skills-and-developer-tools)
@@ -63,6 +69,7 @@
 - [Multi-Agent Systems and Handoffs](#multi-agent-systems-and-handoffs)
 - [Open-Source Alternatives](#open-source-alternatives)
 - [Tutorials and Practice Guides](#tutorials-and-practice-guides)
+- [Articles](#articles)
 - [Reviews, Analysis and Coverage](#reviews-analysis-and-coverage)
 - [Known Gotchas and Launch Limitations](#known-gotchas-and-launch-limitations)
 - [License Scope](#license-scope)
@@ -226,6 +233,50 @@ End-to-end multi-app production workflows illustrating permission handoffs, cont
 - [Release Readiness and Verification Audit (docs/use-cases/engineering-and-product.md)](docs/use-cases/engineering-and-product.md) - Go/no-go release verification combining GitHub CI status, Linear milestones, and Vercel preview builds.
 - [Product Launch Content Workspace (docs/use-cases/launch-and-operations.md)](docs/use-cases/launch-and-operations.md) - Multi-tool launch coordinator aligning Notion specs, Figma design tokens, and marketing copy drafts.
 - [Continuous Competitor Watch and Citation Digest (docs/use-cases/research-and-knowledge.md)](docs/use-cases/research-and-knowledge.md) - Read-only research routine combining Exa neural search, Consensus evidence, and Zotero citations.
+
+---
+
+## Community-Built Projects
+
+A showcase of applications, agent clusters, utilities, and integrations built by the community for the OpenAI Dots ecosystem.
+
+- [DotHedge Fund (x.com/TOADeveloper)](https://x.com/TOADeveloper/status/2105528151488987424) - A collective trading fund comprised of 12 distinct Dots, each running an independent strategy, personality, and trading desk managing portfolios.
+- [Dots for Social Media (x.com/dsqjaffa)](https://x.com/dsqjaffa/status/2105317937183617333) - Autonomous social media marketing team that monitors niches, analyzes viral video trends on TikTok and Instagram, and drafts scripts.
+- [InsurHOT Insurance Intelligence (github.com/alongor666)](https://github.com/alongor666/InsurHOT) - Specialized Dot deployment collecting public insurance disclosures and structuring findings into queryable databases.
+- [Dot OS Multi-Agent Cluster (github.com/evan-till)](https://github.com/evan-till/dot-os) - Architecture orchestrating eight specialized Dot nodes running in parallel with automated state reconciliation.
+- [dotsbase (dotsbase.com)](https://dotsbase.com) - Unofficial community directory and guide indexing OpenAI Dots resources, workflows, and developer tools.
+- [dots-mcp Server (github.com/mergisi)](https://github.com/mergisi/dots-mcp) - Model Context Protocol server enabling local MCP clients to search Dot guides, ecosystem news, and tools.
+- [dotlink Workstation Bridge (github.com/abird-ai)](https://github.com/abird-ai/dotlink) - Local workstation file bridge securely connecting local project directories to cloud agent sandboxes.
+- [Agent Tincan (github.com/mvanhorn)](https://github.com/mvanhorn/agent-tincan) - Multi-agent adapter allowing Dots to receive and dispatch tasks within larger agent collectives.
+- [agent-handoff-bridge (github.com/1ststepai)](https://github.com/1ststepai/agent-handoff-bridge) - Self-hosted MCP queue enabling supervised handoffs between Codex, an OpenAI Dot, and external execution runners.
+- [msg.lmm.best (github.com/TokenNotIncluded)](https://github.com/TokenNotIncluded/msg.lmm.best) - Real-time team communication channel built for persistent agent collaboration with human operators.
+- [AgentForEach (github.com/AgentForEach)](https://github.com/AgentForEach/AgentForEach) - Collective agent orchestration framework featuring shared memory, cron scheduling, and approval pipelines.
+- [Omarchy Dot Plugin (github.com/tcballard)](https://github.com/tcballard/omarchy-plugin-openai-dot) - System integration plugin connecting OpenAI Dot capabilities to external runtime services.
+- [Dots Ambient Screensaver (github.com/ruijun1110)](https://github.com/ruijun1110/dots-screensaver) - Desktop animation screensaver recreating OpenAI Dot ambient idle states and visual behaviors.
+- [motes Memory Bridge (github.com/levalencia)](https://github.com/levalencia/motes) - Personal notes, scratchpad, and memory bridge for persistent agent sessions.
+- [codex-docs Mirror (github.com/chenrui333)](https://github.com/chenrui333/codex-docs) - Comprehensive community documentation mirror for Codex and Agent API references.
+- [Open Dot via Composio (github.com/composio-community)](https://github.com/composio-community/open-dot) - Agent framework pairing OpenAI reasoning with Composio application connectors across 100+ services.
+
+---
+
+## Banger Tweets and Viral Takes
+
+High-signal community reactions, viral launch demonstrations, and architectural takes from founders, engineers, and researchers.
+
+- [OpenAI Launch Announcement (x.com/OpenAI)](https://x.com/OpenAI/status/2104984504133918973) - Official product framing and launch video introducing always-on personal agents with dedicated cloud computers.
+- [DotHedge Fund Announcement (x.com/TOADeveloper)](https://x.com/TOADeveloper/status/2105528151488987424) - Autonomous hedge fund run entirely by 12 distinct OpenAI Dots, each managing their own strategy and trading desk.
+- [Monothreads and Orchestration Experience (x.com/mukulagarwalXR)](https://x.com/mukulagarwalXR/status/2105528118815711357) - Practical deep dive on using Dots to orchestrate threads across ChatGPT and Codex with unified multi-thread awareness.
+- [Hermes Agent Cross-Briefing (x.com/OpenAI)](https://x.com/OpenAI/status/2104984504133918973) - Autonomous agent handoff where an existing Hermes agent briefed a new Dot, co-designed an application, and validated trust.
+- [Dots for Social Media Marketing (x.com/dsqjaffa)](https://x.com/dsqjaffa/status/2105317937183617333) - Viral showcase deploying specialized marketing Dots to watch, analyze, and script trending TikTok and Instagram content.
+- [Multi-Dot Production Studio (x.com/sora19ai)](https://x.com/sora19ai/status/2105194773397307405) - Demonstration of three specialized Dots collaborating as a production team to align on design, code, and 3D assets.
+- [Remote Workflow and DevDay Setup (x.com/mweinbach)](https://x.com/mweinbach/status/2105049222592532581) - Hands-on impressions delegating real-time tasks to a cloud Dot while traveling remotely.
+- [105 Planted Bugs Benchmark on GPT-6.1 Sol (x.com/PawelHuryn)](https://x.com/PawelHuryn/status/2105065401193279918) - Benchmark testing GPT-6.1 Sol on 2 production repositories with 105 planted bugs to evaluate autonomous debugging.
+- [Early Access Assistant Review (x.com/twostraws)](https://x.com/twostraws/status/2104982934423839229) - Firsthand impressions from Paul Hudson testing ChatGPT Dots as part of early access developer testing.
+- [Dedicated VM Multi-Agent Setup (x.com/dhruvalgolakiya)](https://x.com/dhruvalgolakiya/status/2105224441357840830) - Architecture guide assigning dedicated virtual machines to persistent agents with multi-provider subscriptions.
+- [Local Machine Interface with Dot (x.com/morganlinton)](https://x.com/morganlinton/status/2105138143913820457) - Seamless computer control using Dot to monitor benchmarks and bridge cloud and desktop workflows.
+- [Context and Memory Prompt Blueprint (x.com/EXM7777)](https://x.com/EXM7777/status/2105290458541011269) - Prompt framework for establishing deep operational context and structured business memory for persistent Dots.
+- [Parallel Game and 3D Model Development (youtu.be/RhlCOuG3DMY)](https://youtu.be/RhlCOuG3DMY) - Live video test having a Dot develop a Godot game and render a Blender 3D model in parallel on its cloud computer.
+- [Dual Cloud and Local Machine Execution (threads.com/@yujen.chen.r)](https://www.threads.com/@yujen.chen.r/post/Dd51KYhE1JX) - Hands-on testing of an OpenAI Dot operating a Linux cloud container while simultaneously controlling a local workstation.
 
 ---
 
@@ -682,6 +733,17 @@ A complete catalog of 150 standardized Model Context Protocol (MCP) connector sp
 - [Configuring ChatGPT Dots (aimatters.co.kr)](https://aimatters.co.kr/ai-tool/53699/) - Walkthrough covering initial account setup, permissions, and oversight modes.
 - [Persistent Agent Architecture Study (github.com/beamnxw)](https://github.com/beamnxw) - Technical study analyzing persistent agent execution paradigms and state isolation.
 - [Dots Animation Motion Study (github.com/QuarkOS)](https://github.com/QuarkOS) - Visual animation project illustrating persistent agent operational cycles.
+
+---
+
+## Articles
+
+In-depth technical breakdowns, architectural essays, and strategic guides exploring always-on agents and persistent cloud execution.
+
+- [Commercial Workflows with Dots and GPT-6.1 Sol (x.com/sairahul1)](https://x.com/sairahul1/status/2105231735109931157) - Analysis of revenue-generating workflows combining OpenAI Dots, reasoning models, and generative media tools.
+- [Persistent Agent Execution and Sandbox Architecture (x.com/monokern)](https://x.com/monokern/status/2105277060478382207) - Technical breakdown of virtual browser isolation, long-term memory reconciliation, and agent permissions.
+- [Practical Guide to Bounded Agent Delegation (x.com/everestchris6)](https://x.com/everestchris6/status/2105342721745670579) - Step-by-step methodology for defining task boundaries, configuring app permissions, and managing human sign-offs.
+- [The Shift to 24/7 Agentic Infrastructure (x.com/aiedge_)](https://x.com/aiedge_/status/2105316014766645505) - Strategic examination of persistent cloud agents, tool calling ergonomics, and the future of enterprise software.
 
 ---
 

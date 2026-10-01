@@ -288,5 +288,105 @@
     "url": "docs/use-cases/research-and-knowledge.md#1-continuous-industry-beat-and-competitor-watch",
     "access_level": "read-only",
     "source_type": "production_use_case"
+  },
+  {
+    "id": "dothedge-fund",
+    "name": "DotHedge Fund",
+    "category": "finance-spending",
+    "role": "Portfolio Management",
+    "summary": "Autonomous hedge fund comprised of 12 distinct OpenAI Dots, each running an independent strategy, personality, and trading desk.",
+    "url": "https://x.com/TOADeveloper/status/2105528151488987424",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  },
+  {
+    "id": "dots-for-social-media",
+    "name": "Dots for Social Media",
+    "category": "content-social",
+    "role": "Social Media Strategy",
+    "summary": "Autonomous marketing team of Dots that monitors niche topics, tracks viral TikTok and Instagram videos, and scripts short-form content.",
+    "url": "https://x.com/dsqjaffa/status/2105317937183617333",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  },
+  {
+    "id": "dotsbase",
+    "name": "dotsbase",
+    "category": "research-briefs",
+    "role": "Knowledge Hub",
+    "summary": "Community-maintained directory and guide aggregating official resources, community tools, and practice playbooks for OpenAI Dots.",
+    "url": "https://dotsbase.com",
+    "access_level": "read-only",
+    "source_type": "community_project"
+  },
+  {
+    "id": "dots-mcp",
+    "name": "dots-mcp Server",
+    "category": "coding-shipping",
+    "role": "Tool Calling Protocol",
+    "summary": "Model Context Protocol server enabling MCP clients to query OpenAI Dot documentation, guides, and tooling indices locally.",
+    "url": "https://github.com/mergisi/dots-mcp",
+    "access_level": "read-only",
+    "source_type": "community_project"
+  },
+  {
+    "id": "dots-screensaver",
+    "name": "Dots Ambient Screensaver",
+    "category": "meetings-daily-admin",
+    "role": "Visual Utility",
+    "summary": "Desktop animation screensaver recreating OpenAI Dot ambient idle states and motion behaviors.",
+    "url": "https://github.com/ruijun1110/dots-screensaver",
+    "access_level": "read-only",
+    "source_type": "community_project"
+  },
+  {
+    "id": "motes",
+    "name": "motes Memory Bridge",
+    "category": "research-briefs",
+    "role": "Memory Management",
+    "summary": "Personal notes, scratchpad, and memory bridge for persistent agent sessions.",
+    "url": "https://github.com/levalencia/motes",
+    "access_level": "read-write",
+    "source_type": "community_project"
+  },
+  {
+    "id": "article-commercial-workflows",
+    "name": "Commercial Workflows with Dots and GPT-6.1 Sol",
+    "category": "revenue-growth",
+    "role": "Strategic Analysis",
+    "summary": "Analysis of revenue-generating workflows combining OpenAI Dots, reasoning models, and generative media tools.",
+    "url": "https://x.com/sairahul1/status/2105231735109931157",
+    "access_level": "read-only",
+    "source_type": "article"
+  },
+  {
+    "id": "article-sandbox-architecture",
+    "name": "Persistent Agent Execution and Sandbox Architecture",
+    "category": "coding-shipping",
+    "role": "Architecture Analysis",
+    "summary": "Technical breakdown of virtual browser isolation, long-term memory reconciliation, and agent permissions in OpenAI Dots.",
+    "url": "https://x.com/monokern/status/2105277060478382207",
+    "access_level": "read-only",
+    "source_type": "article"
+  },
+  {
+    "id": "article-bounded-delegation",
+    "name": "Practical Guide to Bounded Agent Delegation",
+    "category": "team-policy-governance",
+    "role": "Operational Guide",
+    "summary": "Step-by-step methodology for defining task boundaries, configuring app permissions, and managing human sign-offs.",
+    "url": "https://x.com/everestchris6/status/2105342721745670579",
+    "access_level": "read-only",
+    "source_type": "article"
+  },
+  {
+    "id": "article-247-agentic-infrastructure",
+    "name": "The Shift to 24/7 Agentic Infrastructure",
+    "category": "coding-shipping",
+    "role": "Industry Essay",
+    "summary": "Strategic examination of persistent cloud agents, tool calling ergonomics, and the future of enterprise software.",
+    "url": "https://x.com/aiedge_/status/2105316014766645505",
+    "access_level": "read-only",
+    "source_type": "article"
   }
 ]
