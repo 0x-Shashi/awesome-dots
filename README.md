@@ -8,7 +8,7 @@
   <a href="#curated-catalog"><img src="https://img.shields.io/badge/Curated_Resources-400%2B-brightgreen.svg" alt="400+ Curated Resources"></a>
   <a href="#operational-tracks"><img src="https://img.shields.io/badge/Operational_Tracks-8-blueviolet.svg" alt="8 Operational Tracks"></a>
   <a href="https://www.trackawesomelist.com/0x-Shashi/awesome-openai-dots/"><img src="https://www.trackawesomelist.com/badge.svg" alt="Track Awesome List"></a>
-  <a href="https://github.com/0x-Shashi/awesome-dots/commits/main"><img src="https://img.shields.io/github/last-commit/0x-Shashi/awesome-openai-dots.svg" alt="GitHub Last Commit"></a>
+  <a href="https://github.com/0x-Shashi/awesome-dots/commits/main"><img src="https://img.shields.io/github/last-commit/0x-Shashi/awesome-dots.svg" alt="GitHub Last Commit"></a>
 </div>
 
 ## Overview:
